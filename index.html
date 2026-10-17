@@ -1,0 +1,2698 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Kế Hoạch Du Lịch Huế - Đà Nẵng - Hội An Xinh Yêu ✨</title>
+  
+  <!-- Google Fonts: Quicksand + Nunito cho style cute nịnh mắt -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Quicksand:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            candy: {
+              50: '#fff5f7',
+              100: '#ffe4ea',
+              200: '#fecdd6',
+              300: '#fea3b4',
+              400: '#fb6f8c',
+              500: '#f43f68',
+              600: '#e11d51',
+            },
+            pastel: {
+              cream: '#FFFDF9',
+              yellow: '#FEF9C3',
+              purple: '#F3E8FF',
+              blue: '#E0F2FE',
+              mint: '#DCFCE7',
+              orange: '#FFEDD5'
+            }
+          },
+          fontFamily: {
+            sans: ['Nunito', 'sans-serif'],
+            display: ['Quicksand', 'sans-serif'],
+          },
+          boxShadow: {
+            'cute': '0 10px 25px -5px rgba(251, 111, 140, 0.15), 0 8px 10px -6px rgba(251, 111, 140, 0.1)',
+            'card': '0 8px 30px rgba(0, 0, 0, 0.04)',
+            'float': '0 15px 35px rgba(244, 63, 104, 0.25)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: radial-gradient(circle at top left, #fff1f2 0%, #fffbf0 45%, #f0fdf4 100%);
+      min-height: 100vh;
+      color: #374151;
+      overflow-x: hidden;
+      -webkit-tap-highlight-color: transparent;
+    }
+    
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #fdf2f4;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #fbcfe8;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #f472b6;
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1.5px solid rgba(255, 255, 255, 0.95);
+    }
+    
+    .badge-paid {
+      background-color: #dcfce7;
+      color: #15803d;
+      border: 1px solid #bbf7d0;
+    }
+    
+    .badge-deposit {
+      background-color: #fef9c3;
+      color: #a16207;
+      border: 1px solid #fef08a;
+    }
+    
+    .badge-unpaid {
+      background-color: #fee2e2;
+      color: #b91c1c;
+      border: 1px solid #fecaca;
+    }
+
+    @keyframes floating {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-5px) rotate(1.5deg); }
+    }
+    .animate-float-slow {
+      animation: floating 4s ease-in-out infinite;
+    }
+
+    .cute-btn {
+      transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .cute-btn:hover {
+      transform: translateY(-2px) scale(1.02);
+    }
+    .cute-btn:active {
+      transform: translateY(1px) scale(0.97);
+    }
+
+    /* Pulse dot for cloud sync status */
+    @keyframes pulse-ring {
+      0% { transform: scale(0.95); opacity: 0.8; }
+      50% { transform: scale(1.15); opacity: 0.4; }
+      100% { transform: scale(0.95); opacity: 0.8; }
+    }
+    .sync-indicator-online {
+      animation: pulse-ring 2.5s infinite;
+    }
+
+    /* Mobile safe area padding for bottom tab */
+    .pb-safe {
+      padding-bottom: calc(env(safe-area-inset-bottom, 16px) + 68px);
+    }
+  </style>
+</head>
+<body class="p-3 sm:p-6 lg:p-8 relative pb-safe md:pb-8">
+
+  <div class="max-w-6xl mx-auto space-y-4 sm:space-y-6">
+    
+    <!-- Top Navigation & Decorative Header -->
+    <header class="glass-card rounded-3xl p-4 sm:p-6 lg:p-8 shadow-cute relative overflow-hidden border border-pink-100">
+      <div class="absolute -right-8 -top-8 w-44 h-44 bg-pink-200/40 rounded-full blur-2xl pointer-events-none"></div>
+      <div class="absolute -left-8 -bottom-8 w-40 h-40 bg-amber-200/40 rounded-full blur-2xl pointer-events-none"></div>
+      
+      <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6">
+        <div class="flex items-center gap-3.5 sm:gap-5 text-left w-full md:w-auto">
+          <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-tr from-pink-400 to-rose-300 flex items-center justify-center text-2xl sm:text-3xl shadow-lg shadow-pink-200 animate-float-slow text-white flex-shrink-0">
+            🍧
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex flex-wrap items-center gap-1.5 sm:gap-2 mb-1">
+              <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-pink-100 text-pink-600 text-[10px] sm:text-xs font-bold uppercase tracking-wider">
+                <i class="fa-solid fa-heart text-pink-500"></i> Couple Trip 2 Người
+              </span>
+              <!-- Cloud Sync Indicator -->
+              <span id="cloud-status-badge" class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-600 border border-emerald-200 text-[10px] sm:text-xs font-bold">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 sync-indicator-online"></span>
+                <span id="cloud-status-text">Đang đồng bộ đám mây</span>
+              </span>
+            </div>
+            <h1 class="text-xl sm:text-2xl lg:text-3xl font-black font-display text-gray-800 tracking-tight truncate sm:whitespace-normal">
+              Hà Nội – Huế – Đà Nẵng – Hội An
+            </h1>
+            <p class="text-xs sm:text-sm text-gray-500 font-medium truncate sm:whitespace-normal mt-0.5">
+              <i class="fa-regular fa-calendar-days text-pink-400 mr-1"></i> 28/11/2026 – 05/12/2026 
+              <span class="mx-1.5">•</span> 
+              <i class="fa-solid fa-cloud-arrow-up text-emerald-500 mr-1"></i> Đồng bộ đa thiết bị
+            </p>
+          </div>
+        </div>
+
+        <!-- Quick Actions Bar -->
+        <div class="flex flex-wrap items-center justify-start md:justify-end gap-2 w-full md:w-auto">
+          <button onclick="openModal('add')" class="cute-btn flex-1 sm:flex-none flex items-center justify-center gap-1.5 sm:gap-2 px-3.5 sm:px-4 py-2.5 sm:py-3 rounded-2xl bg-gradient-to-r from-pink-500 to-rose-400 text-white font-bold text-xs sm:text-sm shadow-md shadow-pink-200">
+            <i class="fa-solid fa-plus-circle text-sm"></i>
+            <span>Thêm Mục</span>
+          </button>
+
+          <button onclick="openSheetModal()" title="Nhập hàng loạt từ Google Sheet / Excel" class="cute-btn flex items-center justify-center gap-1.5 px-3 sm:px-3.5 py-2.5 sm:py-3 rounded-2xl bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-xs sm:text-sm shadow-md shadow-emerald-200">
+            <i class="fa-solid fa-file-excel text-sm"></i>
+            <span class="hidden sm:inline">Nhập từ Sheet</span>
+          </button>
+
+          <!-- Backup / Export Data for GitHub -->
+          <button onclick="exportDataJson()" title="Tải file dữ liệu JSON sao lưu" class="cute-btn p-2.5 sm:p-3 rounded-2xl bg-white border border-pink-200 text-pink-600 hover:bg-pink-50 shadow-sm" aria-label="Sao lưu dữ liệu">
+            <i class="fa-solid fa-download text-xs sm:text-sm"></i>
+          </button>
+
+          <!-- Cloud Sync Refresh Button -->
+          <button onclick="manualSync()" title="Nhấn để tải dữ liệu mới nhất từ đám mây" class="cute-btn p-2.5 sm:p-3 rounded-2xl bg-white border border-emerald-200 text-emerald-600 hover:bg-emerald-50 shadow-sm" aria-label="Tải lại từ cloud">
+            <i id="sync-spin-icon" class="fa-solid fa-rotate text-xs sm:text-sm"></i>
+          </button>
+
+          <button onclick="resetToDefaultData()" title="Khôi phục lịch trình mẫu gốc" class="cute-btn p-2.5 sm:p-3 rounded-2xl bg-white border border-gray-200 text-gray-500 hover:text-rose-600 shadow-sm" aria-label="Đặt lại">
+            <i class="fa-solid fa-rotate-left text-xs sm:text-sm"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Quick highlight metrics -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 mt-4 sm:mt-6 pt-4 sm:pt-6 border-t border-pink-50 text-center">
+        <div class="p-2.5 sm:p-3 bg-pink-50/70 rounded-2xl border border-pink-100">
+          <div class="text-[10px] sm:text-xs font-bold text-pink-500 uppercase tracking-wide">Thời Gian</div>
+          <div class="text-base sm:text-lg font-black text-gray-800 mt-0.5">8N 7Đ (Couple)</div>
+        </div>
+        <div class="p-2.5 sm:p-3 bg-blue-50/70 rounded-2xl border border-blue-100">
+          <div class="text-[10px] sm:text-xs font-bold text-blue-500 uppercase tracking-wide">Tổng Chi Phí</div>
+          <div class="text-base sm:text-lg font-black text-blue-600 mt-0.5 truncate" id="stat-total-cost">0 đ</div>
+        </div>
+        <div class="p-2.5 sm:p-3 bg-amber-50/70 rounded-2xl border border-amber-100">
+          <div class="text-[10px] sm:text-xs font-bold text-amber-600 uppercase tracking-wide">Điểm Dừng</div>
+          <div class="text-base sm:text-lg font-black text-gray-800 mt-0.5 truncate">Huế • ĐN • Hội An</div>
+        </div>
+        <div class="p-2.5 sm:p-3 bg-emerald-50/70 rounded-2xl border border-emerald-100">
+          <div class="text-[10px] sm:text-xs font-bold text-emerald-600 uppercase tracking-wide">Đã Lên Kế Hoạch</div>
+          <div class="text-base sm:text-lg font-black text-emerald-700 mt-0.5 truncate" id="stat-activity-count">0 items</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Desktop / Tablet Top Tabs -->
+    <div class="hidden md:flex items-center justify-center">
+      <div class="inline-flex p-1.5 bg-white/90 glass-card rounded-2xl shadow-card border border-pink-100 gap-1 overflow-x-auto max-w-full">
+        <button onclick="switchTab('itinerary')" id="tab-btn-itinerary" class="tab-button px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all flex items-center gap-2 bg-pink-500 text-white shadow-sm">
+          <i class="fa-solid fa-map-location-dot"></i> Lịch Trình Chi Tiết
+        </button>
+        <button onclick="switchTab('food')" id="tab-btn-food" class="tab-button px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all flex items-center gap-2 text-gray-600 hover:text-pink-600">
+          <i class="fa-solid fa-utensils"></i> Bản Đồ Ăn Uống 🍲
+        </button>
+        <button onclick="switchTab('stays')" id="tab-btn-stays" class="tab-button px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all flex items-center gap-2 text-gray-600 hover:text-pink-600">
+          <i class="fa-solid fa-hotel"></i> Homestay & Khách Sạn 🌿
+        </button>
+        <button onclick="switchTab('checklist')" id="tab-btn-checklist" class="tab-button px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all flex items-center gap-2 text-gray-600 hover:text-pink-600">
+          <i class="fa-solid fa-clipboard-check"></i> Checklist Đi Lại 🎀
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Fixed Bottom Navigation Bar (iPhone / Android) -->
+    <nav class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-lg border-t border-pink-100 shadow-[0_-4px_20px_rgba(244,63,104,0.08)] px-3 py-2 flex items-center justify-around">
+      <button onclick="switchTab('itinerary')" id="mobile-tab-itinerary" class="mobile-nav-btn flex flex-col items-center gap-1 text-pink-600 font-bold text-[10px]">
+        <div class="w-8 h-8 rounded-xl flex items-center justify-center bg-pink-100">
+          <i class="fa-solid fa-calendar-day text-xs"></i>
+        </div>
+        <span>Lịch Trình</span>
+      </button>
+      <button onclick="switchTab('food')" id="mobile-tab-food" class="mobile-nav-btn flex flex-col items-center gap-1 text-gray-400 font-semibold text-[10px]">
+        <div class="w-8 h-8 rounded-xl flex items-center justify-center">
+          <i class="fa-solid fa-utensils text-xs"></i>
+        </div>
+        <span>Ăn Uống</span>
+      </button>
+      <button onclick="switchTab('stays')" id="mobile-tab-stays" class="mobile-nav-btn flex flex-col items-center gap-1 text-gray-400 font-semibold text-[10px]">
+        <div class="w-8 h-8 rounded-xl flex items-center justify-center">
+          <i class="fa-solid fa-hotel text-xs"></i>
+        </div>
+        <span>Nơi Ở</span>
+      </button>
+      <button onclick="switchTab('checklist')" id="mobile-tab-checklist" class="mobile-nav-btn flex flex-col items-center gap-1 text-gray-400 font-semibold text-[10px]">
+        <div class="w-8 h-8 rounded-xl flex items-center justify-center">
+          <i class="fa-solid fa-check-double text-xs"></i>
+        </div>
+        <span>Checklist</span>
+      </button>
+    </nav>
+
+    <!-- MAIN TAB 1: ITINERARY -->
+    <main id="tab-itinerary" class="tab-content block space-y-4 sm:space-y-6">
+      
+      <!-- Day Selector Carousel / Pills -->
+      <div class="glass-card p-3 sm:p-4 rounded-3xl shadow-card border border-pink-100">
+        <div class="flex items-center justify-between mb-2.5 px-2">
+          <h2 class="text-xs sm:text-sm font-extrabold text-gray-800 flex items-center gap-2">
+            <span>🗓️</span> Chọn Ngày Khám Phá:
+          </h2>
+          <span class="text-[11px] sm:text-xs text-pink-600 font-bold bg-pink-100/70 px-2.5 py-0.5 rounded-full" id="current-day-label">
+            Ngày 1
+          </span>
+        </div>
+        
+        <div class="flex gap-2 sm:gap-2.5 overflow-x-auto pb-2 scrollbar-none" id="day-pill-container">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+
+      <!-- Schedule Timeline Container -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6">
+        
+        <!-- Left Column: Day Details & Activities List (8 cols) -->
+        <div class="lg:col-span-8 space-y-3 sm:space-y-4">
+          <div class="glass-card p-4 sm:p-6 rounded-3xl shadow-card border border-pink-100 flex flex-col sm:flex-row justify-between sm:items-center gap-3 bg-gradient-to-r from-white via-pink-50/25 to-white">
+            <div>
+              <span class="text-[11px] sm:text-xs uppercase font-extrabold text-pink-500 tracking-wider" id="active-day-subtitle">NGÀY 1</span>
+              <h2 class="text-lg sm:text-2xl font-black text-gray-800" id="active-day-title">Khởi hành Hà Nội → Huế</h2>
+              <p class="text-xs text-gray-500 mt-0.5" id="active-day-note">Thời tiết mát mẻ, chuẩn bị hành lý nhẹ nhàng</p>
+            </div>
+            
+            <div class="flex items-center gap-2 self-start sm:self-center">
+              <button onclick="openSheetModal('activities')" class="cute-btn inline-flex items-center justify-center gap-1.5 px-3 py-1.5 sm:px-3.5 sm:py-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 text-xs font-bold rounded-xl border border-emerald-200">
+                <i class="fa-solid fa-table"></i> <span class="hidden xs:inline">Dán từ Sheet</span>
+              </button>
+              <button onclick="openModal('add')" class="cute-btn inline-flex items-center justify-center gap-1.5 px-3.5 py-1.5 sm:px-4 sm:py-2 bg-pink-100 hover:bg-pink-200 text-pink-700 text-xs font-bold rounded-xl">
+                <i class="fa-solid fa-plus"></i> Thêm mục
+              </button>
+            </div>
+          </div>
+
+          <!-- Activities Stream -->
+          <div id="timeline-container" class="space-y-3 relative">
+            <!-- Dynamically populated activities -->
+          </div>
+        </div>
+
+        <!-- Right Column: Day Highlights, Weather tips & Quick Budget (4 cols) -->
+        <div class="lg:col-span-4 space-y-3.5 sm:space-y-5">
+          <!-- Cost Breakdown Card for Selected Day -->
+          <div class="glass-card p-4 sm:p-5 rounded-3xl shadow-card border border-pink-100">
+            <h3 class="font-bold text-xs sm:text-sm text-gray-800 flex items-center gap-2 mb-3">
+              <i class="fa-solid fa-wallet text-pink-500"></i> Chi Phí Trong Ngày Này
+            </h3>
+            <div class="space-y-2 text-xs sm:text-sm">
+              <div class="flex justify-between items-center text-gray-600">
+                <span>Dự trù:</span>
+                <span class="font-bold text-gray-800" id="day-stat-planned">0 đ</span>
+              </div>
+              <div class="flex justify-between items-center text-gray-600">
+                <span>Thực tế / Đã chi:</span>
+                <span class="font-bold text-pink-600 text-sm sm:text-base" id="day-stat-actual">0 đ</span>
+              </div>
+              <div class="w-full bg-gray-100 h-2 rounded-full overflow-hidden mt-2">
+                <div id="day-stat-progress" class="bg-gradient-to-r from-pink-400 to-rose-500 h-full rounded-full transition-all duration-500" style="width: 50%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Outfit / Photo tips for Couple -->
+          <div class="glass-card p-4 sm:p-5 rounded-3xl shadow-card border border-amber-100 bg-amber-50/30">
+            <h3 class="font-bold text-xs sm:text-sm text-amber-900 flex items-center gap-2 mb-1.5">
+              <span>👗</span> Gợi Ý Outfit & Sống Ảo
+            </h3>
+            <p class="text-xs text-amber-800/90 leading-relaxed" id="day-outfit-note">
+              Tone màu trắng, be hoặc xanh nhạt khi chụp ở biển & lăng tẩm. Mang giày bệt hoặc sneaker êm chân để đi bộ nhiều nhé!
+            </p>
+          </div>
+
+          <!-- Weather Backup Plan Tips -->
+          <div class="glass-card p-4 sm:p-5 rounded-3xl shadow-card border border-blue-100 bg-blue-50/30">
+            <div class="flex items-start gap-3">
+              <div class="text-2xl flex-shrink-0">🌦️</div>
+              <div>
+                <h4 class="font-bold text-xs sm:text-sm text-blue-900 mb-1">Mẹo Thời Tiết Huế - Đà Nẵng</h4>
+                <p class="text-xs text-blue-800/80 leading-relaxed">
+                  Nếu Huế trời đổ mưa: ưu tiên ghé Đại Nội, check-in Cà phê muối Đặng Thái Thân, bảo tàng, hoặc thưởng thức trọn vẹn ẩm thực ấm nóng (bánh canh cua, bánh ép nóng hổi).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick notes from real trip logs -->
+          <div class="glass-card p-4 sm:p-5 rounded-3xl shadow-card border border-purple-100 bg-purple-50/20">
+            <h3 class="font-bold text-xs sm:text-sm text-purple-900 flex items-center gap-2 mb-2">
+              <span>💡</span> Ghi Chú Đắt Giá (Từ Chuyến Đi)
+            </h3>
+            <ul class="text-xs text-purple-950/80 space-y-1.5 list-disc list-inside">
+              <li>Vé tàu di sản Huế – Đà Nẵng qua Đèo Hải Vân nên ngồi bên trái hướng đi để ngắm trọn biển Lăng Cô.</li>
+              <li>Chè Mợ Tôn Đích nhất định phải thử chè bột lọc bọc heo quay mặn ngọt độc lạ.</li>
+              <li>Lăng Tự Đức và Đại Nội chụp ảnh áo dài cổ phục hoặc vintage cực tôn dáng.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- MAIN TAB 2: FOOD MAP -->
+    <section id="tab-food" class="tab-content hidden space-y-4 sm:space-y-6">
+      <div class="glass-card p-4 sm:p-6 rounded-3xl shadow-card border border-pink-100">
+        <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+          <div class="max-w-xl">
+            <span class="text-[10px] sm:text-xs font-bold text-pink-500 uppercase tracking-widest">Thiên Đường Ẩm Thực</span>
+            <h2 class="text-lg sm:text-2xl font-black text-gray-800 mt-0.5">Quán Ăn Ngon & Review Chân Thực 🍜</h2>
+            <p class="text-xs text-gray-500">Tổng hợp các quán ăn thực tế theo sổ tay du lịch, kèm địa chỉ và mẹo thưởng thức.</p>
+          </div>
+          <div class="flex items-center gap-2 self-start sm:self-center">
+            <button onclick="openSheetModal('food')" class="cute-btn flex items-center gap-1.5 px-3 py-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 font-bold text-xs rounded-xl">
+              <i class="fa-solid fa-table"></i> <span class="hidden sm:inline">Dán Sheet Quán Ăn</span>
+            </button>
+            <button onclick="openFoodModal('add')" class="cute-btn flex items-center gap-1.5 px-3.5 py-2 bg-gradient-to-r from-pink-500 to-rose-400 text-white font-bold text-xs rounded-xl shadow-md shadow-pink-200">
+              <i class="fa-solid fa-plus-circle text-xs"></i> Thêm Quán Mới
+            </button>
+          </div>
+        </div>
+
+        <!-- Filter tabs for Food -->
+        <div class="flex flex-wrap gap-1.5 sm:gap-2 mb-4 sm:mb-6">
+          <button onclick="filterFoodCity('all')" class="food-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold bg-pink-500 text-white shadow-sm" data-city="all">Tất Cả</button>
+          <button onclick="filterFoodCity('hue')" class="food-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white text-gray-600 hover:bg-pink-50 border border-gray-100" data-city="hue">Cố Đô Huế</button>
+          <button onclick="filterFoodCity('hoian')" class="food-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white text-gray-600 hover:bg-pink-50 border border-gray-100" data-city="hoian">Phố Cổ Hội An</button>
+          <button onclick="filterFoodCity('danang')" class="food-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white text-gray-600 hover:bg-pink-50 border border-gray-100" data-city="danang">Đà Nẵng Biển Xanh</button>
+        </div>
+
+        <!-- Food items responsive grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-4" id="food-grid-container">
+          <!-- Dynamically populated from JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN TAB 3: STAYS -->
+    <section id="tab-stays" class="tab-content hidden space-y-4 sm:space-y-6">
+      <div class="glass-card p-4 sm:p-6 rounded-3xl shadow-card border border-pink-100">
+        <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+          <div class="max-w-xl">
+            <span class="text-[10px] sm:text-xs font-bold text-pink-500 uppercase tracking-widest">Nơi Dừng Chân Ấm Áp</span>
+            <h2 class="text-lg sm:text-2xl font-black text-gray-800 mt-0.5">Homestay & Khách Sạn Đẹp Xinh 🌿</h2>
+            <p class="text-xs text-gray-500">Mức giá sinh viên, view đẹp, gần biển hoặc trung tâm phố cổ.</p>
+          </div>
+          <div class="flex items-center gap-2 self-start sm:self-center">
+            <button onclick="openSheetModal('stays')" class="cute-btn flex items-center gap-1.5 px-3 py-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 font-bold text-xs rounded-xl">
+              <i class="fa-solid fa-table"></i> <span class="hidden sm:inline">Dán Sheet Home</span>
+            </button>
+            <button onclick="openStayModal('add')" class="cute-btn flex items-center gap-1.5 px-3.5 py-2 bg-gradient-to-r from-pink-500 to-rose-400 text-white font-bold text-xs rounded-xl shadow-md shadow-pink-200">
+              <i class="fa-solid fa-plus-circle text-xs"></i> Thêm Khách Sạn
+            </button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6" id="stay-columns-container">
+          <!-- Rendered in script -->
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN TAB 4: CHECKLIST -->
+    <section id="tab-checklist" class="tab-content hidden space-y-4 sm:space-y-6">
+      <div class="glass-card p-4 sm:p-6 rounded-3xl shadow-card border border-pink-100">
+        <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+          <div>
+            <span class="text-[10px] sm:text-xs font-bold text-pink-500 uppercase tracking-widest">Chuẩn Bị Kỹ Càng</span>
+            <h2 class="text-lg sm:text-2xl font-black text-gray-800 mt-0.5">Checklist Đồ Đạc & Booking Trước Giờ Bay ✨</h2>
+          </div>
+          <div class="flex items-center gap-2 self-start">
+            <button onclick="openSheetModal('checklist')" class="cute-btn px-3 py-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 font-bold text-xs rounded-xl">
+              <i class="fa-solid fa-table mr-1"></i> <span class="hidden sm:inline">Dán Sheet</span>
+            </button>
+            <button onclick="addNewChecklistItemPrompt()" class="cute-btn px-3.5 py-2 bg-pink-100 hover:bg-pink-200 text-pink-700 font-bold text-xs rounded-xl">
+              <i class="fa-solid fa-plus mr-1"></i> Thêm việc cần làm
+            </button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4" id="checklist-container">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- MODAL: ACTIVITY FORM -->
+  <div id="activity-modal" class="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/40 backdrop-blur-sm hidden transition-opacity">
+    <div class="glass-card bg-white w-full max-w-lg rounded-3xl shadow-float p-5 sm:p-6 relative border border-pink-100 animate-scale-up max-h-[90vh] overflow-y-auto">
+      
+      <button onclick="closeModal()" class="absolute top-4 right-4 sm:top-5 sm:right-5 w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-gray-100 hover:bg-pink-100 text-gray-400 hover:text-pink-600 flex items-center justify-center transition-colors">
+        <i class="fa-solid fa-xmark text-sm"></i>
+      </button>
+
+      <div class="flex items-center gap-3 mb-4 sm:mb-5">
+        <div id="modal-icon-badge" class="w-9 h-9 sm:w-10 sm:h-10 rounded-2xl bg-pink-100 text-pink-600 flex items-center justify-center text-base sm:text-lg">
+          ✍️
+        </div>
+        <div>
+          <h3 class="text-base sm:text-lg font-black text-gray-800" id="modal-title">Thêm Hoạt Động Mới</h3>
+          <p class="text-[11px] sm:text-xs text-gray-400">Cập nhật lịch trình chi tiết và nịnh mắt</p>
+        </div>
+      </div>
+
+      <form id="activity-form" onsubmit="handleFormSubmit(event)" class="space-y-3 sm:space-y-4">
+        <input type="hidden" id="form-item-id">
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-gray-600 mb-1">Thuộc Ngày Nào</label>
+            <select id="form-day-id" class="w-full text-xs font-medium px-3.5 py-2.5 rounded-xl border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-300 bg-pink-50/20">
+              <!-- Options populated by JS -->
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-gray-600 mb-1">Thời Gian (VD: 08:30 - 11:30)</label>
+            <input type="text" id="form-time" required placeholder="08:30 - 11:30" class="w-full text-xs font-medium px-3.5 py-2.5 rounded-xl border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-300">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-gray-600 mb-1">Tên Hoạt Động / Điểm Check-in</label>
+          <input type="text" id="form-activity" required placeholder="VD: Tham quan Lăng Tự Đức, Ăn bún bò..." class="w-full text-xs font-medium px-3.5 py-2.5 rounded-xl border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-300">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-gray-600 mb-1">Địa Chỉ / Vị Trí Cụ Thể</label>
+          <input type="text" id="form-location" placeholder="VD: Huyền Trân Công Chúa, Thủy Xuân, Huế" class="w-full text-xs font-medium px-3.5 py-2.5 rounded-xl border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-300">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-gray-600 mb-1">Chi Phí Dự Kiến (VNĐ)</label>
+            <input type="number" id="form-planned-cost" placeholder="0" class="w-full text-xs font-medium px-3.5 py-2.5 rounded-xl border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-300">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-gray-600 mb-1">Chi Phí Thực Tế (VNĐ)</label>
+            <input type="number" id="form-actual-cost" placeholder="0" class="w-full text-xs font-medium px-3.5 py-2.5 rounded-xl border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-300">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-gray-600 mb-1">Trạng Thái Thanh Toán</label>
+            <select id="form-status" class="w-full text-xs font-medium px-3.5 py-2.5 rounded-xl border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-300 bg-white">
+              <option value="Đã Thanh Toán">Đã Thanh Toán ✨</option>
+              <option value="Đã Cọc">Đã Cọc 🏷️</option>
+              <option value="Chưa Thanh Toán">Chưa Thanh Toán ⏳</option>
+              <option value="Miễn Phí">Miễn Phí 🎁</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-gray-600 mb-1">Gợi Ý Trang Phục / Outfit</label>
+            <input type="text" id="form-outfit" placeholder="VD: Năng động, Váy trắng, Áo dài..." class="w-full text-xs font-medium px-3.5 py-2.5 rounded-xl border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-300">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-gray-600 mb-1">Ghi Chú & Lưu Ý Đặc Biệt</label>
+          <textarea id="form-note" rows="2" placeholder="Mang ô, đặt trước bàn, tip cô chú..." class="w-full text-xs font-medium p-3 rounded-xl border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-300"></textarea>
+        </div>
+
+        <div class="flex items-center justify-end gap-2.5 pt-3 border-t border-pink-100">
+          <button type="button" onclick="closeModal()" class="px-4 py-2 rounded-xl border border-gray-200 text-xs font-bold text-gray-500 hover:bg-gray-50">
+            Hủy Bỏ
+          </button>
+          <button type="submit" class="cute-btn px-5 py-2 rounded-xl bg-gradient-to-r from-pink-500 to-rose-400 text-white font-bold text-xs shadow-md shadow-pink-200">
+            Lưu Hoạt Động
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL: FOOD FORM -->
+  <div id="food-modal" class="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/40 backdrop-blur-sm hidden transition-opacity">
+    <div class="glass-card bg-white w-full max-w-lg rounded-3xl shadow-float p-5 sm:p-6 relative border border-pink-100 animate-scale-up max-h-[90vh] overflow-y-auto">
+      <button onclick="closeFoodModal()" class="absolute top-4 right-4 sm:top-5 sm:right-5 w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-gray-100 hover:bg-pink-100 text-gray-400 hover:text-pink-600 flex items-center justify-center transition-colors">
+        <i class="fa-solid fa-xmark text-sm"></i>
+      </button>
+
+      <div class="flex items-center gap-3 mb-4 sm:mb-5">
+        <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center text-base sm:text-lg">
+          🍲
+        </div>
+        <div>
+          <h3 class="text-base sm:text-lg font-black text-gray-800" id="food-modal-title">Thêm Quán Ăn Mới</h3>
+          <p class="text-[11px] sm:text-xs text-gray-400">Ghi lại các địa chỉ ăn vặt & đặc sản ngon tuyệt</p>
+        </div>
+      </div>
+
+      <form id="food-form" onsubmit="handleFoodFormSubmit(event)" class="space-y-3 sm:space-y-4">
+        <input type="hidden" id="form-food-id">
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-gray-600 mb-1">Thành Phố</label>
+            <select id="form-food-city" class="w-full text-xs font-medium px-3.5 py-2.5 rounded-xl border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-300 bg-white">
+              <option value="hue">Cố Đô Huế</option>
+              <option value="hoian">Phố Cổ Hội An</option>
+              <option value="danang">Đà Nẵng Biển Xanh</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-gray-600 mb-1">Thẻ Gợi Ý (Tag)</label>
+            <input type="text" id="form-food-tag" placeholder="VD: Must try, Đặc sản, Ăn vặt..." class="w-full text-xs font-medium px-3.5 py-2.5 rounded-xl border border-pink-200">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-gray-600 mb-1">Tên Quán Ăn / Món Đặc Sản</label>
+          <input type="text" id="form-food-name" required placeholder="VD: Bánh canh cua Hương, Cơm gà..." class="w-full text-xs font-medium px-3.5 py-2.5 rounded-xl border border-pink-200">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-gray-600 mb-1">Mức Giá Dự Kiến</label>
+            <input type="text" id="form-food-price" placeholder="VD: 35k - 60k / suất" class="w-full text-xs font-medium px-3.5 py-2.5 rounded-xl border border-pink-200">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-gray-600 mb-1">Giờ Mở Cửa</label>
+            <input type="text" id="form-food-hours" placeholder="VD: 06:30 - 21:00" class="w-full text-xs font-medium px-3.5 py-2.5 rounded-xl border border-pink-200">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-gray-600 mb-1">Địa Chỉ Quán</label>
+          <input type="text" id="form-food-address" placeholder="VD: 30 Phạm Hồng Thái, Vĩnh Ninh..." class="w-full text-xs font-medium px-3.5 py-2.5 rounded-xl border border-pink-200">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-gray-600 mb-1">Cảm Nhận & Mẹo Thưởng Thức</label>
+          <textarea id="form-food-review" rows="2" placeholder="Nước dùng ngọt vị cua, nên gọi thêm quẩy..." class="w-full text-xs font-medium p-3 rounded-xl border border-pink-200"></textarea>
+        </div>
+
+        <div class="flex items-center justify-end gap-2.5 pt-3 border-t border-pink-100">
+          <button type="button" onclick="closeFoodModal()" class="px-4 py-2 rounded-xl border border-gray-200 text-xs font-bold text-gray-500 hover:bg-gray-50">
+            Hủy Bỏ
+          </button>
+          <button type="submit" class="cute-btn px-5 py-2 rounded-xl bg-gradient-to-r from-pink-500 to-rose-400 text-white font-bold text-xs shadow-md shadow-pink-200">
+            Lưu Quán Ăn
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL: STAY FORM -->
+  <div id="stay-modal" class="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/40 backdrop-blur-sm hidden transition-opacity">
+    <div class="glass-card bg-white w-full max-w-lg rounded-3xl shadow-float p-5 sm:p-6 relative border border-pink-100 animate-scale-up max-h-[90vh] overflow-y-auto">
+      <button onclick="closeStayModal()" class="absolute top-4 right-4 sm:top-5 sm:right-5 w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-gray-100 hover:bg-pink-100 text-gray-400 hover:text-pink-600 flex items-center justify-center transition-colors">
+        <i class="fa-solid fa-xmark text-sm"></i>
+      </button>
+
+      <div class="flex items-center gap-3 mb-4 sm:mb-5">
+        <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-2xl bg-pink-100 text-pink-600 flex items-center justify-center text-base sm:text-lg">
+          🏡
+        </div>
+        <div>
+          <h3 class="text-base sm:text-lg font-black text-gray-800" id="stay-modal-title">Thêm Homestay / Khách Sạn</h3>
+          <p class="text-[11px] sm:text-xs text-gray-400">Lưu thông tin phòng nghỉ, giá cả và liên hệ</p>
+        </div>
+      </div>
+
+      <form id="stay-form" onsubmit="handleStayFormSubmit(event)" class="space-y-3 sm:space-y-4">
+        <input type="hidden" id="form-stay-id">
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-gray-600 mb-1">Khu Vực / Chặng Dừng</label>
+            <input type="text" id="form-stay-city" required placeholder="VD: Huế (3 Đêm)..." class="w-full text-xs font-medium px-3.5 py-2.5 rounded-xl border border-pink-200">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-gray-600 mb-1">Mức Giá / Đêm</label>
+            <input type="text" id="form-stay-price" placeholder="VD: 350k - 500k / đêm" class="w-full text-xs font-medium px-3.5 py-2.5 rounded-xl border border-pink-200">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-gray-600 mb-1">Tên Homestay / Khách Sạn</label>
+          <input type="text" id="form-stay-name" required placeholder="VD: Ladyfit House, Siro House..." class="w-full text-xs font-medium px-3.5 py-2.5 rounded-xl border border-pink-200">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-gray-600 mb-1">Vị Trí Cụ Thể</label>
+          <input type="text" id="form-stay-area" placeholder="VD: Bờ Nam sông Hương, gần biển Mỹ Khê..." class="w-full text-xs font-medium px-3.5 py-2.5 rounded-xl border border-pink-200">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-gray-600 mb-1">Đặc Điểm Nổi Bật / Tiện Ích</label>
+          <textarea id="form-stay-highlights" rows="2" placeholder="Có bể bơi, hỗ trợ thuê xe máy, cho mượn xe đạp..." class="w-full text-xs font-medium p-3 rounded-xl border border-pink-200"></textarea>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-gray-600 mb-1">Đường Dẫn Booking / Maps</label>
+          <input type="url" id="form-stay-link" placeholder="https://..." class="w-full text-xs font-medium px-3.5 py-2.5 rounded-xl border border-pink-200">
+        </div>
+
+        <div class="flex items-center justify-end gap-2.5 pt-3 border-t border-pink-100">
+          <button type="button" onclick="closeStayModal()" class="px-4 py-2 rounded-xl border border-gray-200 text-xs font-bold text-gray-500 hover:bg-gray-50">
+            Hủy Bỏ
+          </button>
+          <button type="submit" class="cute-btn px-5 py-2 rounded-xl bg-gradient-to-r from-pink-500 to-rose-400 text-white font-bold text-xs shadow-md shadow-pink-200">
+            Lưu Nơi Ở
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL: GOOGLE SHEETS / EXCEL BULK IMPORT -->
+  <div id="sheet-modal" class="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/40 backdrop-blur-sm hidden transition-opacity">
+    <div class="glass-card bg-white w-full max-w-3xl rounded-3xl shadow-float p-5 sm:p-6 relative border border-emerald-100 animate-scale-up max-h-[92vh] overflow-y-auto">
+      
+      <button onclick="closeSheetModal()" class="absolute top-4 right-4 sm:top-5 sm:right-5 w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-gray-100 hover:bg-rose-100 text-gray-400 hover:text-rose-600 flex items-center justify-center transition-colors">
+        <i class="fa-solid fa-xmark text-sm"></i>
+      </button>
+
+      <div class="flex items-center gap-3.5 mb-4 sm:mb-5 pb-3 border-b border-gray-100">
+        <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-xl sm:text-2xl shadow-inner flex-shrink-0">
+          📊
+        </div>
+        <div>
+          <h3 class="text-base sm:text-xl font-black text-gray-800">Nhập Dữ Liệu Từ Google Sheets / Excel</h3>
+          <p class="text-[11px] sm:text-xs text-gray-500 mt-0.5">Sao chép các cột từ bảng tính của bạn rồi dán trực tiếp vào đây để nạp siêu tốc!</p>
+        </div>
+      </div>
+
+      <!-- Category Selector -->
+      <div class="mb-3.5">
+        <label class="block text-[11px] sm:text-xs font-bold text-gray-700 uppercase mb-2">1. Chọn đề mục muốn nhập dữ liệu:</label>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+          <button type="button" onclick="selectSheetType('activities')" id="sheet-tab-activities" class="sheet-type-btn p-2 sm:p-2.5 rounded-2xl text-[11px] sm:text-xs font-bold border text-center transition-all bg-emerald-500 text-white border-emerald-500 shadow-sm">
+            🗓️ Lịch Trình
+          </button>
+          <button type="button" onclick="selectSheetType('food')" id="sheet-tab-food" class="sheet-type-btn p-2 sm:p-2.5 rounded-2xl text-[11px] sm:text-xs font-bold border text-center transition-all bg-white text-gray-600 border-gray-200 hover:bg-emerald-50">
+            🍲 Quán Ăn
+          </button>
+          <button type="button" onclick="selectSheetType('stays')" id="sheet-tab-stays" class="sheet-type-btn p-2 sm:p-2.5 rounded-2xl text-[11px] sm:text-xs font-bold border text-center transition-all bg-white text-gray-600 border-gray-200 hover:bg-emerald-50">
+            🌿 Homestay
+          </button>
+          <button type="button" onclick="selectSheetType('checklist')" id="sheet-tab-checklist" class="sheet-type-btn p-2 sm:p-2.5 rounded-2xl text-[11px] sm:text-xs font-bold border text-center transition-all bg-white text-gray-600 border-gray-200 hover:bg-emerald-50">
+            🎀 Checklist
+          </button>
+        </div>
+      </div>
+
+      <!-- Template Guide Preview -->
+      <div class="mb-3.5 bg-emerald-50/60 rounded-2xl p-3 sm:p-4 border border-emerald-100">
+        <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-2 mb-2">
+          <div class="text-[11px] sm:text-xs font-black text-emerald-800 flex items-center gap-1.5">
+            <i class="fa-solid fa-circle-info text-emerald-600"></i>
+            <span>Khung bảng mẫu chuẩn:</span>
+          </div>
+          <div class="flex items-center gap-1.5">
+            <button type="button" onclick="copyTemplateHeaders()" class="cute-btn px-2.5 py-1 bg-white hover:bg-emerald-100 text-emerald-700 border border-emerald-200 text-[10px] sm:text-[11px] font-bold rounded-lg shadow-sm">
+              <i class="fa-solid fa-copy mr-1"></i> Copy Cột Mẫu
+            </button>
+            <button type="button" onclick="fillExampleDataToPasteArea()" class="cute-btn px-2.5 py-1 bg-emerald-600 hover:bg-emerald-700 text-white text-[10px] sm:text-[11px] font-bold rounded-lg shadow-sm">
+              <i class="fa-solid fa-wand-magic-sparkles mr-1"></i> Điền Thử Mẫu
+            </button>
+          </div>
+        </div>
+
+        <div id="sheet-template-info" class="text-[11px] text-gray-700 overflow-x-auto p-2 bg-white rounded-xl border border-emerald-100/80 font-mono">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <!-- Paste Area -->
+      <div class="space-y-3">
+        <div class="flex justify-between items-center">
+          <label class="block text-[11px] sm:text-xs font-bold text-gray-700 uppercase">
+            2. Dán dữ liệu đã copy từ Google Sheets / Excel:
+          </label>
+        </div>
+
+        <textarea id="sheet-paste-input" rows="6" placeholder="Copy cả bảng dữ liệu từ Google Sheets rồi nhấn Ctrl + V vào đây..." class="w-full text-xs font-mono p-3 rounded-2xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-300 bg-gray-50/50 leading-relaxed"></textarea>
+
+        <!-- Mode of Insertion -->
+        <div class="flex flex-wrap items-center justify-between gap-3 pt-1">
+          <div class="flex items-center gap-3">
+            <label class="text-xs font-bold text-gray-600 flex items-center gap-1.5 cursor-pointer">
+              <input type="radio" name="sheet-insert-mode" value="append" checked class="accent-emerald-600">
+              <span>Thêm tiếp vào danh sách</span>
+            </label>
+            <label class="text-xs font-bold text-gray-600 flex items-center gap-1.5 cursor-pointer">
+              <input type="radio" name="sheet-insert-mode" value="replace" class="accent-emerald-600">
+              <span>Ghi đè mục này</span>
+            </label>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <button type="button" onclick="closeSheetModal()" class="px-3.5 py-2 rounded-xl border border-gray-200 text-xs font-bold text-gray-500 hover:bg-gray-50">
+              Đóng
+            </button>
+            <button type="button" onclick="processSheetImport()" class="cute-btn px-5 py-2 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-bold text-xs shadow-md shadow-emerald-200 flex items-center gap-1.5">
+              <i class="fa-solid fa-file-import"></i> Nạp Dữ Liệu
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast" class="fixed bottom-20 md:bottom-6 right-4 sm:right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none">
+    <div class="glass-card bg-white px-4 py-2.5 sm:px-5 sm:py-3 rounded-2xl shadow-float border border-pink-200 flex items-center gap-2.5">
+      <span class="text-pink-500 text-base sm:text-lg" id="toast-icon">✨</span>
+      <span class="text-xs font-bold text-gray-700" id="toast-msg">Thao tác thành công!</span>
+    </div>
+  </div>
+
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+    import { getAuth, signInAnonymously } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+    import { getFirestore, doc, setDoc, onSnapshot } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+    let app, db, auth;
+    let currentUser = null;
+    let isCloudReady = false;
+
+    // Cấu hình Firebase của bạn
+    const firebaseConfig = {
+      apiKey: "AIzaSyDY7N30IfSo4oBCP5hWayXVl_Ue5iZqovc",
+      authDomain: "hanoihuedananghoian.firebaseapp.com",
+      projectId: "hanoihuedananghoian",
+      storageBucket: "hanoihuedananghoian.firebasestorage.app",
+      messagingSenderId: "633451804476",
+      appId: "1:633451804476:web:7481c734e7496091911039",
+      measurementId: "G-E52X4CWE6W"
+    };
+
+    try {
+      app = initializeApp(firebaseConfig);
+      db = getFirestore(app);
+      auth = getAuth(app);
+
+      // Tự động đăng nhập ẩn danh trên cả 3 máy
+      signInAnonymously(auth).then(() => {
+        currentUser = auth.currentUser;
+        isCloudReady = true;
+        updateSyncStatus(true, "Đám mây kết nối");
+        setupCloudListener();
+      }).catch(err => {
+        console.warn("Auth error:", err);
+        updateSyncStatus(false, "Sẵn sàng (Offline)");
+      });
+    } catch (err) {
+      console.warn("Init error:", err);
+      updateSyncStatus(false, "Sẵn sàng (Offline)");
+    }
+
+    // Lắng nghe thay đổi theo thời gian thực (Realtime Sync)
+    function setupCloudListener() {
+      if (!db || !currentUser) return;
+      try {
+        const sharedTripDoc = doc(db, 'plans', 'hue_danang_trip_2026');
+        onSnapshot(sharedTripDoc, (docSnap) => {
+          if (docSnap.exists()) {
+            const remoteData = docSnap.data();
+            if (remoteData && remoteData.payload) {
+              const parsed = JSON.parse(remoteData.payload);
+              if (!window.currentData || (remoteData.updatedAt && remoteData.updatedAt > (window.lastLocalUpdate || 0))) {
+                window.currentData = parsed;
+                window.lastLocalUpdate = remoteData.updatedAt;
+                localStorage.setItem('vietnam_couple_trip_data_v2', remoteData.payload);
+                if (typeof window.renderAll === 'function') {
+                  window.renderAll();
+                }
+                if (typeof window.showToast === 'function') {
+                  window.showToast("Dữ liệu vừa được cập nhật từ thiết bị khác! ☁️", "📱");
+                }
+              }
+            }
+          }
+        }, (error) => {
+          console.warn("Cloud sync listener error:", error);
+        });
+      } catch (e) {
+        console.warn("Could not bind cloud listener:", e);
+      }
+    }
+
+    // Đẩy dữ liệu lên Cloud khi bạn thêm / sửa / xóa / tick checklist
+    window.syncToCloud = async function() {
+      if (!isCloudReady || !db || !currentUser) return;
+      try {
+        const sharedTripDoc = doc(db, 'plans', 'hue_danang_trip_2026');
+        const now = Date.now();
+        window.lastLocalUpdate = now;
+        await setDoc(sharedTripDoc, {
+          payload: JSON.stringify(window.currentData),
+          updatedAt: now,
+          updatedBy: currentUser.uid
+        });
+        updateSyncStatus(true, "Đã lưu đám mây");
+      } catch (err) {
+        console.warn("Cloud push notice:", err);
+      }
+    };
+
+    function updateSyncStatus(isOnline, text) {
+      const badge = document.getElementById('cloud-status-badge');
+      const textEl = document.getElementById('cloud-status-text');
+      if (badge && textEl) {
+        textEl.textContent = text;
+        if (isOnline) {
+          badge.className = "inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-600 border border-emerald-200 text-[10px] sm:text-xs font-bold";
+        } else {
+          badge.className = "inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-gray-50 text-gray-500 border border-gray-200 text-[10px] sm:text-xs font-semibold";
+        }
+      }
+    }
+  </script>
+
+  <script>
+    /* Default initial dataset directly organized from the user's travel notebooks */
+    const DEFAULT_DATA = {
+      days: [
+        {
+          id: 1,
+          dateLabel: "28/11 (T7)",
+          fullDate: "Thứ Bảy, 28/11/2026",
+          title: "Hà Nội → Huế Cố Đô",
+          subtitle: "NGÀY 1: CHECK-IN HUẾ THƠ MỘNG",
+          note: "Bay đến Phú Bài, nhận xe máy, ngắm phố phường Huế về đêm",
+          outfit: "Trang phục bay thoải mái, tone be sáng hoặc kem pastel.",
+          activities: [
+            {
+              id: "act-1-1",
+              time: "10:30 - 12:00",
+              activity: "Ra sân bay Nội Bài & Bay đến Phú Bài (Huế)",
+              location: "Sân bay Nội Bài → Sân bay Phú Bài",
+              plannedCost: 0,
+              actualCost: 0,
+              status: "Đã Thanh Toán",
+              note: "Vé máy bay đã đặt trước. Nhớ check-in online trước 24h để lấy chỗ đẹp cạnh cửa sổ.",
+              outfit: "Casual năng động"
+            },
+            {
+              id: "act-1-2",
+              time: "13:30 - 14:30",
+              activity: "Bắt taxi/Grab về trung tâm & Nhận phòng Homestay",
+              location: "Khu vực Phạm Ngũ Lão / Nguyễn Công Trứ, Huế",
+              plannedCost: 150000,
+              actualCost: 147000,
+              status: "Đã Thanh Toán",
+              note: "Gửi đồ tại home nếu chưa tới giờ check-in. Thuê xe máy luôn tại chỗ (130k-150k/ngày).",
+              outfit: ""
+            },
+            {
+              id: "act-1-3",
+              time: "15:00 - 16:30",
+              activity: "Ăn trưa muộn: Bún bò Huế & Uống nước đậu",
+              location: "Bún bò O Liễu hoặc Bún bò Bà Gái",
+              plannedCost: 100000,
+              actualCost: 90000,
+              status: "Đã Thanh Toán",
+              note: "Hương vị cay nồng đặc trưng, nước dùng thơm ruốc sả cực kỳ cuốn.",
+              outfit: ""
+            },
+            {
+              id: "act-1-4",
+              time: "17:00 - 18:30",
+              activity: "Dạo Cầu Trường Tiền & Ngắm hoàng hôn bên bờ Sông Hương",
+              location: "Cầu Trường Tiền - Cầu gỗ lim ven sông",
+              plannedCost: 30000,
+              actualCost: 20000,
+              status: "Đã Thanh Toán",
+              note: "Ghé ăn tào phớ gánh rong nóng hổi ngọt thanh bên bờ sông.",
+              outfit: "Váy hoa nhí / sơ mi vintage"
+            },
+            {
+              id: "act-1-5",
+              time: "19:30 - 22:30",
+              activity: "Ăn tối Cơm Niêu Chạn & Đi chè Mợ Tôn Đích",
+              location: "Chạn - 01 Nguyễn Thái Học & 20 Đinh Tiên Hoàng",
+              plannedCost: 350000,
+              actualCost: 320000,
+              status: "Đã Thanh Toán",
+              note: "Món Chè bột lọc heo quay béo bùi dẻo dai 10/10 nhất định phải thử!",
+              outfit: ""
+            }
+          ]
+        },
+        {
+          id: 2,
+          dateLabel: "29/11 (CN)",
+          fullDate: "Chủ Nhật, 29/11/2026",
+          title: "Đại Nội – Lăng Tẩm – Ẩm Thực Huế",
+          subtitle: "NGÀY 2: HOÀI NIỆM KINH THÀNH",
+          note: "Đi sớm tránh nắng, combo vé 3 điểm (Đại Nội - Tự Đức - Minh Mạng)",
+          outfit: "Cổ phục Việt Phục hoặc áo dài truyền thống, tone màu đỏ/vàng/trắng nổi bật.",
+          activities: [
+            {
+              id: "act-2-1",
+              time: "07:00 - 08:00",
+              activity: "Ăn sáng Bánh canh cua Hương & Cà phê muối",
+              location: "30 Phạm Hồng Thái & Cafe Muối Đặng Thái Thân",
+              plannedCost: 80000,
+              actualCost: 75000,
+              status: "Đã Thanh Toán",
+              note: "Nước dùng bánh canh sệt sánh ngọt tôm cua; cf muối đậm đà béo ngậy.",
+              outfit: ""
+            },
+            {
+              id: "act-2-2",
+              time: "08:30 - 11:30",
+              activity: "Khám phá Đại Nội Huế & Điện Kiến Trung",
+              location: "Kinh Thành Huế, Thuận Thành",
+              plannedCost: 400000,
+              actualCost: 400000,
+              status: "Đã Thanh Toán",
+              note: "Nên mang theo ô/nón lá, chuẩn bị nước khoáng. Không mặc quần áo quá ngắn khi vào điện thờ.",
+              outfit: "Áo dài / Cổ phục nịnh mắt"
+            },
+            {
+              id: "act-2-3",
+              time: "12:00 - 13:30",
+              activity: "Ăn trưa: Cơm Hến Hoa Đông & Bánh ép nóng",
+              location: "64/7 Ưng Bình, Vỹ Dạ",
+              plannedCost: 100000,
+              actualCost: 85000,
+              status: "Đã Thanh Toán",
+              note: "Cơm hến chuẩn vị Huế siêu rẻ và giòn rụm tóp mỡ.",
+              outfit: ""
+            },
+            {
+              id: "act-2-4",
+              time: "14:30 - 17:00",
+              activity: "Tham quan Lăng Tự Đức & Check-in Đồi Vọng Cảnh",
+              location: "Thủy Bằng, TP Huế & Đồi Vọng Cảnh",
+              plannedCost: 150000,
+              actualCost: 150000,
+              status: "Đã Thanh Toán",
+              note: "Lăng Tự Đức thơ mộng như tranh thủy mặc. Đồi Vọng Cảnh nhìn xuống rừng thông cực thơ.",
+              outfit: "Tone xanh lá / be vintage"
+            },
+            {
+              id: "act-2-5",
+              time: "19:00 - 22:00",
+              activity: "Ăn bánh bèo nậm lọc & Chill phố Tây Tà Vẹt / Sophie",
+              location: "Quán Chi (52 Lê Viết Lượng) & Phố Tây Chu Văn An",
+              plannedCost: 300000,
+              actualCost: 280000,
+              status: "Đã Thanh Toán",
+              note: "Thưởng thức khay bánh bèo chén tôm chấy chấm mắm cay ngọt giòn da heo.",
+              outfit: "Năng động, xinh xắn"
+            }
+          ]
+        },
+        {
+          id: 3,
+          dateLabel: "30/11 (T2)",
+          fullDate: "Thứ Hai, 30/11/2026",
+          title: "Lăng Minh Mạng – Làng Hương Thủy Xuân",
+          subtitle: "NGÀY 3: GÓC ẢNH SỐNG ẢO RỰC RỠ",
+          note: "Check-in làng hương ngập sắc màu và lăng Minh Mạng cổ kính",
+          outfit: "Tone màu trắng tinh khôi tương phản cực đẹp giữa bó hương vàng, đỏ, xanh.",
+          activities: [
+            {
+              id: "act-3-1",
+              time: "07:30 - 08:30",
+              activity: "Ăn sáng: Bánh mì Trường Tiền O Tho",
+              location: "14 Trần Cao Vân, Phú Hội",
+              plannedCost: 40000,
+              actualCost: 40000,
+              status: "Đã Thanh Toán",
+              note: "Bánh mì nướng giòn rụm pate béo thơm, nhớ gọi 2 ổ/người cho đã thèm.",
+              outfit: ""
+            },
+            {
+              id: "act-3-2",
+              time: "09:00 - 11:30",
+              activity: "Lăng Minh Mạng & Check-in Làng hương Thủy Xuân",
+              location: "Hương Thọ & 84 Huyền Trân Công Chúa",
+              plannedCost: 150000,
+              actualCost: 150000,
+              status: "Đã Thanh Toán",
+              note: "Làng hương miễn phí chụp ảnh khi mua quà hoặc thuê quạt/nón lá (chỉ từ 30-50k).",
+              outfit: "Tone trắng hoặc be"
+            },
+            {
+              id: "act-3-3",
+              time: "12:00 - 13:30",
+              activity: "Ăn trưa: Quán bánh khoái nem lụi Hồng Mai",
+              location: "110 Đinh Tiên Hoàng",
+              plannedCost: 150000,
+              actualCost: 140000,
+              status: "Đã Thanh Toán",
+              note: "Bánh khoái vỏ dày giòn tan tôm thịt kèm nước lèo đậu bùi béo.",
+              outfit: ""
+            },
+            {
+              id: "act-3-4",
+              time: "15:00 - 17:30",
+              activity: "Chùa Thiên Mụ & Thưởng thức tàu phớ gánh đá",
+              location: "Đồi Hà Khê, phường Hương Long",
+              plannedCost: 40000,
+              actualCost: 35000,
+              status: "Đã Thanh Toán",
+              note: "Ngắm sông Hương lúc chiều tà từ góc sân chùa bình yên.",
+              outfit: "Lịch sự, nhã nhặn"
+            },
+            {
+              id: "act-3-5",
+              time: "18:30 - 21:00",
+              activity: "Ăn tối Bún bò Bà Nga & Chuẩn bị vé tàu mai đi",
+              location: "62 Nguyễn Chí Diểu, Phú Hậu",
+              plannedCost: 120000,
+              actualCost: 110000,
+              status: "Đã Thanh Toán",
+              note: "Chuẩn bị hành lý gọn gàng để sáng mai đi tàu di sản sang Đà Nẵng.",
+              outfit: ""
+            }
+          ]
+        },
+        {
+          id: 4,
+          dateLabel: "01/12 (T3)",
+          fullDate: "Thứ Ba, 01/12/2026",
+          title: "Tàu Di Sản Huế → Đà Nẵng – Biển Mỹ Khê",
+          subtitle: "NGÀY 4: ĐÈO HẢI VÂN VIEW BIỂN & CẦU RỒNG",
+          note: "Tuyến đường sắt đẹp nhất Việt Nam, check-in khách sạn gần biển Đà Nẵng",
+          outfit: "Trang phục phong cách du mục hoặc boho nhẹ nhàng lên tàu chụp ảnh siêu nghệ.",
+          activities: [
+            {
+              id: "act-4-1",
+              time: "07:30 - 08:30",
+              activity: "Ăn sáng nhẹ, check-out homestay Huế ra Ga",
+              location: "Ga Huế - 02 Bùi Thị Xuân",
+              plannedCost: 50000,
+              actualCost: 50000,
+              status: "Đã Thanh Toán",
+              note: "Có mặt trước 30 phút để lên tàu thư thả, toa tàu có điều hòa ngắm cảnh.",
+              outfit: ""
+            },
+            {
+              id: "act-4-2",
+              time: "09:00 - 12:30",
+              activity: "Trải nghiệm Tàu Di Sản ngắm vịnh Lăng Cô & Hải Vân",
+              location: "Tàu đường sắt Huế - Đà Nẵng (Toa 1 ngắm biển)",
+              plannedCost: 280000,
+              actualCost: 280000,
+              status: "Đã Thanh Toán",
+              note: "Đoạn qua Đèo Hải Vân nhìn thẳng xuống làn nước xanh ngọc bích cực kỳ mãn nhãn.",
+              outfit: "Vintage tone ấm"
+            },
+            {
+              id: "act-4-3",
+              time: "13:00 - 14:30",
+              activity: "Đến Ga Đà Nẵng - Ăn trưa Cơm gà Tú Tài & Về KS",
+              location: "62 Hải Phòng & Khách sạn khu An Thượng / Mỹ Khê",
+              plannedCost: 200000,
+              actualCost: 180000,
+              status: "Đã Thanh Toán",
+              note: "Nhận phòng khách sạn, thuê xe máy điện/xăng vi vu Đà Nẵng (120k-150k/ngày).",
+              outfit: ""
+            },
+            {
+              id: "act-4-4",
+              time: "16:00 - 18:00",
+              activity: "Dạo biển Mỹ Khê & Thưởng thức Kem bơ cô Thu Chợ Cồn",
+              location: "Bãi biển Mỹ Khê & Chợ Cồn",
+              plannedCost: 100000,
+              actualCost: 90000,
+              status: "Đã Thanh Toán",
+              note: "Thưởng thức kem bơ béo mịn sầu riêng thơm lừng nổi tiếng.",
+              outfit: "Đồ bơi / Maxi dạo biển"
+            },
+            {
+              id: "act-4-5",
+              time: "19:00 - 21:30",
+              activity: "Ăn tối Hải Sản Bé Mặn / Bé Yến & Ngắm Cầu Rồng phun lửa",
+              location: "Đường Võ Nguyên Giáp & Cầu Rồng / Cầu Tình Yêu",
+              plannedCost: 700000,
+              actualCost: 650000,
+              status: "Đã Thanh Toán",
+              note: "Hải sản tươi rói nướng mỡ hành, tôm hấp bia. Đi bộ check-in tượng cá chép hóa rồng.",
+              outfit: "Outfit đi dạo tối"
+            }
+          ]
+        },
+        {
+          id: 5,
+          dateLabel: "02/12 (T4)",
+          fullDate: "Thứ Tư, 02/12/2026",
+          title: "Bán Đảo Sơn Trà – Chèo SUP Biển Mân Thái",
+          subtitle: "NGÀY 5: NẮNG BIỂN RỰC RỠ ĐÀ NẴNG",
+          note: "Đón bình minh trên biển, ghé Chùa Linh Ứng & Bán đảo Sơn Trà",
+          outfit: "Đồ thể thao năng động hoặc đồ bơi màu sắc rực rỡ để chèo SUP.",
+          activities: [
+            {
+              id: "act-5-1",
+              time: "05:00 - 07:00",
+              activity: "Đón bình minh & Chèo SUP tại Bãi Mân Thái",
+              location: "Bãi biển Mân Thái (gần Sơn Trà)",
+              plannedCost: 150000,
+              actualCost: 150000,
+              status: "Đã Thanh Toán",
+              note: "Thuê sup đôi đã kèm áo phao, túi chống nước và chụp ảnh cho khách.",
+              outfit: "Sporty / Swimwear"
+            },
+            {
+              id: "act-5-2",
+              time: "07:30 - 08:30",
+              activity: "Ăn sáng: Bún chả cá 109 Nguyễn Chí Thanh / Bún bà Lữ",
+              location: "109 Nguyễn Chí Thanh, Hải Châu",
+              plannedCost: 80000,
+              actualCost: 80000,
+              status: "Đã Thanh Toán",
+              note: "Chả cá hấp giòn ngọt nước súp bí đỏ thanh mát nạp năng lượng.",
+              outfit: ""
+            },
+            {
+              id: "act-5-3",
+              time: "09:00 - 11:30",
+              activity: "Viếng Chùa Linh Ứng Bãi Bụt & Cà phê Sơn Trà Marina",
+              location: "Bán đảo Sơn Trà, Đà Nẵng",
+              plannedCost: 120000,
+              actualCost: 110000,
+              status: "Đã Thanh Toán",
+              note: "Quán cà phê view Địa Trung Hải nhìn toàn cảnh thành phố biển cực thơ.",
+              outfit: "Váy xanh pastel / Trắng"
+            },
+            {
+              id: "act-5-4",
+              time: "12:00 - 13:30",
+              activity: "Ăn trưa: Bánh tráng cuốn thịt heo Đại Lộc / Donald Trung",
+              location: "Khu vực Hải Châu / Sơn Trà",
+              plannedCost: 150000,
+              actualCost: 140000,
+              status: "Đã Thanh Toán",
+              note: "Thịt hai đầu da chấm mắm nêm đậm đà thơm dứa, ăn kèm nhiều loại rau rừng.",
+              outfit: ""
+            },
+            {
+              id: "act-5-5",
+              time: "15:30 - 18:30",
+              activity: "Tắm biển Mỹ Khê & Chill cà phê bãi biển Esco Beach",
+              location: "Bãi tắm Mỹ Khê & Esco Beach Bar",
+              plannedCost: 160000,
+              actualCost: 150000,
+              status: "Đã Thanh Toán",
+              note: "Gió biển mát rượi, nằm nghe sóng vỗ và ngắm hoàng hôn buông xuống.",
+              outfit: "Đồ bơi / Kính râm"
+            }
+          ]
+        },
+        {
+          id: 6,
+          dateLabel: "03/12 (T5)",
+          fullDate: "Thứ Năm, 03/12/2026",
+          title: "Bà Nà Hills hoặc Ngũ Hành Sơn",
+          subtitle: "NGÀY 6: CẦU VÀNG & CÔNG VIÊN THẦN TIÊN",
+          note: "Check-in Cầu Vàng trong mây hoặc trượt thác Hòa Phú Thành vui nhộn",
+          outfit: "Tone màu rực rỡ như vàng, cam, hồng pastel để nổi bật giữa không gian trời mây.",
+          activities: [
+            {
+              id: "act-6-1",
+              time: "07:30 - 08:30",
+              activity: "Ăn sáng Cháo lòng Chị Bé hoặc Mì Quảng Bà Mua",
+              location: "43/37 Đ. 3 Tháng 2 hoặc 19 Trần Bình Trọng",
+              plannedCost: 80000,
+              actualCost: 70000,
+              status: "Đã Thanh Toán",
+              note: "Mì Quảng tôm thịt đậm vị, bánh tráng mè nướng giòn rụm bẻ vụn ăn kèm.",
+              outfit: ""
+            },
+            {
+              id: "act-6-2",
+              time: "09:00 - 15:30",
+              activity: "Lên Bà Nà Hills: Cầu Vàng - Làng Pháp - Buffet trưa",
+              location: "Sun World Bà Nà Hills, Hòa Vang",
+              plannedCost: 1200000,
+              actualCost: 1200000,
+              status: "Đã Thanh Toán",
+              note: "Thời tiết trên đỉnh Bà Nà se lạnh, mang theo áo khoác cardigan mỏng nhé.",
+              outfit: "Đầm xòe / Cardigan nhẹ"
+            },
+            {
+              id: "act-6-3",
+              time: "18:00 - 20:30",
+              activity: "Về lại thành phố - Ăn bánh xèo Bà Dưỡng & Chè sầu Liên",
+              location: "K280/23 Hoàng Diệu & 189 Hoàng Diệu",
+              plannedCost: 150000,
+              actualCost: 130000,
+              status: "Đã Thanh Toán",
+              note: "Bánh xèo giòn rụm cuốn bánh tráng rau sống, tráng miệng bát chè thái sầu thơm nức mũi.",
+              outfit: "Thoải mái"
+            }
+          ]
+        },
+        {
+          id: 7,
+          dateLabel: "04/12 (T6)",
+          fullDate: "Thứ Sáu, 04/12/2026",
+          title: "Đà Nẵng → Hội An – Phố Cổ Hoa Đăng",
+          subtitle: "NGÀY 7: ĐÈN LỒNG & RỪNG DỪA BẢY MẪU",
+          note: "Di chuyển vào Hội An, chèo thuyền thúng xoay tít & thả hoa đăng sông Hoài",
+          outfit: "Tone nâu tây, be, vàng mustard hoặc hoa nhí đồng điệu với tường vàng Hội An.",
+          activities: [
+            {
+              id: "act-7-1",
+              time: "08:30 - 10:00",
+              activity: "Check-out Đà Nẵng & Di chuyển vào Hội An",
+              location: "Xe đưa đón / Taxi đến Homestay Cẩm Phô, Hội An",
+              plannedCost: 220000,
+              actualCost: 200000,
+              status: "Đã Thanh Toán",
+              note: "Gửi hành lý tại homestay gần phố cổ, thuê xe đạp lượn lờ phố xá.",
+              outfit: ""
+            },
+            {
+              id: "act-7-2",
+              time: "10:30 - 12:30",
+              activity: "Tour Rừng Dừa Bảy Mẫu: Trải nghiệm xoay thúng điệu nghệ",
+              location: "Cẩm Thanh, Hội An",
+              plannedCost: 150000,
+              actualCost: 140000,
+              status: "Đã Thanh Toán",
+              note: "Cô chú chèo thúng rất vui tính, có tiết mục quăng chài & múa thúng siêu chill. Tip nhỏ 50k.",
+              outfit: "Năng động / Đồ dễ vận động"
+            },
+            {
+              id: "act-7-3",
+              time: "13:00 - 14:30",
+              activity: "Ăn trưa: Cơm Gà Bà Buổi / Cơm Gà Anh Xí",
+              location: "22 Phan Chu Trinh & 47/2 Trần Hưng Đạo",
+              plannedCost: 120000,
+              actualCost: 100000,
+              status: "Đã Thanh Toán",
+              note: "Hạt cơm vàng ươm nấu nước luộc gà, thịt gà ta xé bóp hành tây rau răm chua ngọt.",
+              outfit: ""
+            },
+            {
+              id: "act-7-4",
+              time: "15:30 - 18:00",
+              activity: "Dạo Phố Cổ: Uống nước Mót, Chùa Cầu & Cà phê Faifo tầng thượng",
+              location: "150 Trần Phú & 130 Trần Phú",
+              plannedCost: 100000,
+              actualCost: 90000,
+              status: "Đã Thanh Toán",
+              note: "Nước mót thơm mùi thảo mộc cắm hoa sen thơm ngát; Faifo có view mái ngói rêu phong kinh điển.",
+              outfit: "Tone vàng nghệ / Kem"
+            },
+            {
+              id: "act-7-5",
+              time: "19:00 - 21:30",
+              activity: "Thả đèn hoa đăng Sông Hoài & Xem Show Ký Ức Hội An",
+              location: "Bờ sông Hoài & Công viên Đảo Ký Ức Hội An",
+              plannedCost: 650000,
+              actualCost: 600000,
+              status: "Đã Thanh Toán",
+              note: "Show thực cảnh quy mô cực kỳ hoành tráng, âm thanh ánh sáng đỉnh cao xúc động.",
+              outfit: "Xinh xắn lung linh"
+            }
+          ]
+        },
+        {
+          id: 8,
+          dateLabel: "05/12 (T7)",
+          fullDate: "Thứ Bảy, 05/12/2026",
+          title: "Hội An Thong Thả → Sân Bay Về Hà Nội",
+          subtitle: "NGÀY 8: MUA QUÀ & TẠM BIỆT MIỀN TRUNG",
+          note: "Mua quà đặc sản, thưởng thức nốt món ngon, chuyến bay 23:00 về Hà Nội",
+          outfit: "Trang phục bay thoải mái, mang áo khoác ấm vì Hà Nội gió lạnh.",
+          activities: [
+            {
+              id: "act-8-1",
+              time: "07:30 - 09:00",
+              activity: "Ăn sáng Bánh mì Madam Khánh / Phượng & Cà phê dừa",
+              location: "115 Trần Cao Vân & Quán cà phê phố cổ",
+              plannedCost: 80000,
+              actualCost: 75000,
+              status: "Đã Thanh Toán",
+              note: "Madam Khánh có biệt danh 'The Banh Mi Queen' với nước sốt bí truyền đỉnh nóc.",
+              outfit: ""
+            },
+            {
+              id: "act-8-2",
+              time: "09:30 - 11:30",
+              activity: "Đạp xe ngắm Hẻm Vàng, chụp lại những góc ảnh còn thiếu",
+              location: "Các kiệt nhỏ đường Hai Bà Trưng, Bạch Đằng",
+              plannedCost: 30000,
+              actualCost: 20000,
+              status: "Đã Thanh Toán",
+              note: "Buổi sáng nắng sớm chiếu xiên qua giàn hoa giấy rực rỡ, không gian bình yên ít khách.",
+              outfit: "Váy hoa vintage"
+            },
+            {
+              id: "act-8-3",
+              time: "12:00 - 13:30",
+              activity: "Ăn trưa: Cao Lầu Thanh & Mì Quảng Ông Hai",
+              location: "26 Thái Phiên & 6A Trương Minh Lượng",
+              plannedCost: 90000,
+              actualCost: 80000,
+              status: "Đã Thanh Toán",
+              note: "Sợi cao lầu dai sựt, thịt xá xíu đậm đà, tóp mỡ giòn rụm đúng chuẩn.",
+              outfit: ""
+            },
+            {
+              id: "act-8-4",
+              time: "14:00 - 16:30",
+              activity: "Mua sắm đặc sản làm quà: Tré, Mè xửng, Bánh dừa nướng",
+              location: "Chợ Hội An hoặc các tiệm đặc sản uy tín",
+              plannedCost: 400000,
+              actualCost: 380000,
+              status: "Đã Thanh Toán",
+              note: "Đóng thùng xốp gọn gàng gửi ký gửi máy bay.",
+              outfit: ""
+            },
+            {
+              id: "act-8-5",
+              time: "19:00 - 23:00",
+              activity: "Đi xe ra sân bay Đà Nẵng & Bay về Hà Nội chuyến 23:00",
+              location: "Hội An → Sân bay Đà Nẵng (DAD) → Nội Bài (HAN)",
+              plannedCost: 250000,
+              actualCost: 230000,
+              status: "Đã Thanh Toán",
+              note: "Đến sân bay trước 20:30 để hoàn tất thủ tục ký gửi thong thả. Kết thúc chuyến đi tuyệt vời!",
+              outfit: "Cardigan + quần suông dài thoải mái"
+            }
+          ]
+        }
+      ],
+      foodRecommendations: [
+        {
+          id: "f-1",
+          city: "hue",
+          cityName: "Huế",
+          name: "Bánh Canh Cua Hương",
+          address: "30 Phạm Hồng Thái, Vĩnh Ninh",
+          hours: "06:00 - 21:00",
+          price: "50k - 65k",
+          tag: "Đặc sản nức tiếng",
+          review: "Nước cua gạch ngọt sánh, chả cua dai béo ngậy ăn kèm quẩy giòn tan. Đánh giá 9/10."
+        },
+        {
+          id: "f-2",
+          city: "hue",
+          cityName: "Huế",
+          name: "Cơm Niêu Chạn (Cơm Vị Xưa)",
+          address: "01 Nguyễn Thái Học, Phú Hội",
+          hours: "10:00 - 21:00",
+          price: "120k - 200k/người",
+          tag: "Cơm gia đình ấm cúng",
+          review: "Không gian cổ điển, món thịt kho ruốc sả và canh rau tập tàng nấu tôm cực kỳ bắt cơm."
+        },
+        {
+          id: "f-3",
+          city: "hue",
+          cityName: "Huế",
+          name: "Chè Mợ Tôn Đích",
+          address: "20 Đinh Tiên Hoàng, Phú Hòa",
+          hours: "18:00 - 23:30",
+          price: "15k - 30k",
+          tag: "Must Try Cố Đô",
+          review: "Chè bột lọc bọc heo quay vỏ trong suốt, nhân mặn béo ngập trong nước đường gừng thơm phức."
+        },
+        {
+          id: "f-4",
+          city: "hue",
+          cityName: "Huế",
+          name: "Bánh Bèo - Nậm - Lọc Chi",
+          address: "52 Lê Viết Lượng, Xuân Phú",
+          hours: "07:00 - 20:00",
+          price: "30k - 50k",
+          tag: "Ăn vặt vỉa hè",
+          review: "Bánh nậm thơm mùi lá chuối, bánh bèo chén tôm cháy giòn tan. Có đóng hộp mang về làm quà."
+        },
+        {
+          id: "f-5",
+          city: "hue",
+          cityName: "Huế",
+          name: "Cà Phê Muối Đặng Thái Thân",
+          address: "142 Đặng Thái Thân, Thuận Thành",
+          hours: "06:30 - 22:00",
+          price: "25k - 35k",
+          tag: "Gốc Cà Phê Muối",
+          review: "Lớp kem mặn béo bồng bềnh hòa quyện cà phê phin sánh đậm, tạo nên trào lưu gây nghiện."
+        },
+        {
+          id: "f-6",
+          city: "hue",
+          cityName: "Huế",
+          name: "Bún Bò Bà Nga",
+          address: "62 Nguyễn Chí Diểu, Phú Hậu",
+          hours: "17:00 - 23:00",
+          price: "40k - 60k",
+          tag: "Ăn tối ấm lòng",
+          review: "Nước dùng ngọt thanh xương hầm, thịt nạm mềm, chả cua viên to béo ngậy."
+        },
+        {
+          id: "f-7",
+          city: "hoian",
+          cityName: "Hội An",
+          name: "Cơm Gà Bà Buổi",
+          address: "22 Phan Chu Trinh, Hội An",
+          hours: "11:00 - 21:00",
+          price: "55k - 70k",
+          tag: "Huyền thoại phố cổ",
+          review: "Gà ta thả vườn dai ngọt thịt, gỏi hành tây chua nhẹ chống ngấy cực đỉnh."
+        },
+        {
+          id: "f-8",
+          city: "hoian",
+          cityName: "Hội An",
+          name: "Bánh Mì Madam Khánh",
+          address: "115 Trần Cao Vân, Hội An",
+          hours: "07:00 - 19:30",
+          price: "25k - 35k",
+          tag: "The Banh Mi Queen",
+          review: "Pate nhà làm béo mượt, đầy ắp thịt nguội, trứng chiên, đồ chua và thứ nước sốt bí truyền."
+        },
+        {
+          id: "f-9",
+          city: "hoian",
+          cityName: "Hội An",
+          name: "Nước Mót Thảo Mộc",
+          address: "150 Trần Phú, Phố Cổ",
+          hours: "08:00 - 22:00",
+          price: "18k/ly",
+          tag: "Thức uống biểu tượng",
+          review: "Nước sả chanh kim ngân hoa thơm mát, trang trí cánh sen hồng và lá trà xanh siêu yêu."
+        },
+        {
+          id: "f-10",
+          city: "danang",
+          cityName: "Đà Nẵng",
+          name: "Bánh Tráng Cuốn Thịt Heo Donald Trung",
+          address: "64 Nguyễn Chí Thanh, Hải Châu",
+          hours: "08:00 - 22:00",
+          price: "60k - 80k",
+          tag: "Món ngon số 1",
+          review: "Thịt heo hai đầu da luộc chín tới mọng nước, mắm nêm nguyên chất thơm ngào ngạt."
+        },
+        {
+          id: "f-11",
+          city: "danang",
+          cityName: "Đà Nẵng",
+          name: "Hải Sản Bé Mặn / Bé Yến",
+          address: "Lô 11 Võ Nguyên Giáp, Sơn Trà",
+          hours: "09:00 - 23:00",
+          price: "150k - 300k/người",
+          tag: "Hải sản tươi sống",
+          review: "Chọn tôm, ghẹ, ốc ngay tại bể, nướng mọi hoặc xào me thơm lừng ăn sát bờ biển mát rượi."
+        },
+        {
+          id: "f-12",
+          city: "danang",
+          cityName: "Đà Nẵng",
+          name: "Chè Thái Sầu Riêng Cô Liên",
+          address: "189 Hoàng Diệu, Hải Châu",
+          hours: "08:00 - 22:30",
+          price: "25k - 35k",
+          tag: "Món tráng miệng quốc dân",
+          review: "Cơm sầu riêng tươi dày cùi, thạch giòn, mít và nước cốt dừa thơm béo ngậy gây mê mẩn."
+        }
+      ],
+      stays: [
+        {
+          id: "s-1",
+          city: "Huế (3 Đêm)",
+          name: "Mộng Homestay in Huế / Ladyfit House",
+          area: "Phạm Ngũ Lão - Bờ Nam Sông Hương",
+          price: "350k - 500k / đêm",
+          highlights: "Check-in sớm dễ thương, không gian ấm cúng, bếp chung, hỗ trợ thuê xe máy giá rẻ.",
+          link: "https://www.booking.com/searchresults.html?ss=Hue%2C+Vietnam"
+        },
+        {
+          id: "s-2",
+          city: "Đà Nẵng (3 Đêm)",
+          name: "Mangata Beachfront / Siro House / Me Home",
+          area: "An Thượng / Võ Nguyên Giáp (gần biển Mỹ Khê)",
+          price: "450k - 650k / đêm",
+          highlights: "Đi bộ 3 phút ra biển, phòng có bồn tắm xinh xắn sống ảo, khu phố tây nhiều quán cà phê.",
+          link: "https://www.booking.com/searchresults.html?ss=My+Khe+Beach%2C+Da+Nang"
+        },
+        {
+          id: "s-3",
+          city: "Hội An (1-2 Đêm)",
+          name: "Lisa Homestay 2 / Daisy Homestay / Mayci",
+          area: "Cẩm Phô / Rìa phố cổ",
+          price: "350k - 600k / đêm",
+          highlights: "Cho mượn xe đạp miễn phí, có chỗ gửi đồ sau check-out, hồ bơi sân vườn mini xinh xắn.",
+          link: "https://www.booking.com/searchresults.html?ss=Hoi+An%2C+Vietnam"
+        }
+      ],
+      checklist: [
+        { id: "c1", text: "Check-in online vé máy bay HAN ✈️ HUI và DAD ✈️ HAN", done: true },
+        { id: "c2", text: "Đặt vé tàu Di Sản ngắm Đèo Hải Vân trên dsvn.vn (Toa 1 view biển)", done: true },
+        { id: "c3", text: "Đặt phòng homestay Huế (khu Phạm Ngũ Lão / bờ Nam)", done: true },
+        { id: "c4", text: "Đặt phòng khách sạn Đà Nẵng gần bãi biển Mỹ Khê", done: true },
+        { id: "c5", text: "Đặt homestay Hội An có hỗ trợ giữ hành lý & mượn xe đạp", done: true },
+        { id: "c6", text: "Mang CCCD, bằng lái xe máy và giấy tờ tùy thân", done: false },
+        { id: "c7", text: "Chuẩn bị túi chống nước cho điện thoại khi chèo SUP & đi biển", done: false },
+        { id: "c8", text: "Chuẩn bị ô gấp, áo mưa mỏng nhẹ phòng thời tiết mưa bất chợt", done: false },
+        { id: "c9", text: "Mang sạc dự phòng dung lượng lớn (chụp ảnh check-in cả ngày)", done: false },
+        { id: "c10", text: "Outfit chụp ảnh: Áo dài/cổ phục Huế, maxi dạo biển, tone trắng/be", done: false }
+      ]
+    };
+
+    // State Variables
+    window.currentData = null;
+    window.lastLocalUpdate = Date.now();
+    let selectedDayId = 1;
+    let currentFoodFilter = 'all';
+    let currentSheetType = 'activities';
+
+    /* SHEET TEMPLATES CONFIGURATION */
+    const SHEET_TEMPLATES = {
+      activities: {
+        title: "Hoạt Động Lịch Trình (Chi tiết theo Ngày)",
+        headers: ["Ngày (1-8)", "Thời Gian", "Hoạt Động", "Địa Điểm", "CP Dự Trù", "CP Thực Tế", "Trạng Thái", "Outfit", "Ghi Chú"],
+        example: `1\t07:30 - 08:30\tĂn sáng Bún bò O Liễu\t20 Lý Thường Kiệt\t50000\t45000\tĐã Thanh Toán\tCasual năng động\tNước dùng cay nồng thơm ruốc sả
+1\t09:00 - 11:30\tCheck-in Cung An Định\t179 Phan Đình Phùng\t50000\t50000\tĐã Thanh Toán\tÁo dài / Vintage\tMang nón lá sống ảo cực thơ
+2\t06:30 - 08:00\tBánh canh cua Hương & Cà phê muối\t30 Phạm Hồng Thái\t70000\t65000\tĐã Thanh Toán\tTone sáng\tQuán đông nên đến sớm nhé`
+      },
+      food: {
+        title: "Bản Đồ Ẩm Thực (Quán Ăn & Món Ngon)",
+        headers: ["Thành Phố (hue/hoian/danang)", "Tên Quán Ăn / Món", "Địa Chỉ", "Mức Giá", "Giờ Mở Cửa", "Thẻ Gợi Ý", "Cảm Nhận & Review"],
+        example: `hue\tBún bò O Phượng\t24 Nguyễn Khuyến, Phú Nhuận\t50k - 65k\t06:00 - 11:30\tĐặc sản Huế\tNước lèo thanh ngọt xương bò, chả cua siêu to
+hoian\tCơm gà Anh Xí\t47/2 Trần Hưng Đạo, Hội An\t30k - 50k\t11:00 - 21:00\tNgon bổ rẻ\tGà bóp chua ngọt đậm đà, hạt cơm vàng óng ả
+danang\tBánh xèo Bà Dưỡng\tK280/23 Hoàng Diệu, Hải Châu\t60k - 100k\t09:30 - 21:30\tMust try Đà Nẵng\tNước chấm đậu gan béo ngậy chấm ngập bánh giòn`
+      },
+      stays: {
+        title: "Homestay & Khách Sạn",
+        headers: ["Khu Vực / Chặng Dừng", "Tên Homestay / KS", "Mức Giá", "Vị Trí Cụ Thể", "Đặc Điểm Nổi Bật", "Link Booking/Maps"],
+        example: `Huế (3 Đêm)\tMộng Homestay in Huế\t350k - 500k / đêm\t31/111 Đặng Văn Ngữ, An Cựu\tKhông gian gỗ mộc mạc, bếp chung ấm áp, cho thuê xe máy rẻ\thttps://maps.app.goo.gl/oeolDA1hpHxTLVb67
+Đà Nẵng (3 Đêm)\tMangata Beachfront Hotel\t450k - 700k / đêm\t108 Võ Nguyên Giáp, Sơn Trà\tCách biển Mỹ Khê 50m, phòng sạch sẽ, bồn tắm sống ảo\thttps://www.booking.com
+Hội An (1-2 Đêm)\tLisa Homestay 2\t350k - 550k / đêm\t79 Ngô Quyền, Cẩm Phô\tGần phố cổ đi bộ 5 phút, miễn phí xe đạp, cô chủ dễ mến\thttps://www.booking.com`
+      },
+      checklist: {
+        title: "Checklist Chuẩn Bị Trước Chuyến Đi",
+        headers: ["Nội Dung Việc Cần Làm", "Trạng Thái (xong/chưa)"],
+        example: `Kiểm tra mã đặt chỗ vé máy bay Vietjet HAN - HUI và DAD - HAN\txong
+Đặt vé tàu di sản Huế - Đà Nẵng toa 1 ngắm biển Lăng Cô\txong
+Chuẩn bị sạc dự phòng 20000mAh, túi chống nước điện thoại chèo SUP\tchưa
+Mang căn cước công dân và bằng lái xe máy gốc\tchưa
+Chuẩn bị áo mưa mỏng nhẹ và ô gấp nhỏ gọn\tchưa`
+      }
+    };
+
+    function initData() {
+      try {
+        const stored = localStorage.getItem('vietnam_couple_trip_data_v2');
+        if (stored) {
+          window.currentData = JSON.parse(stored);
+          if (window.currentData.foodRecommendations) {
+            window.currentData.foodRecommendations.forEach((f, idx) => { if (!f.id) f.id = 'f-' + (idx + 1); });
+          }
+          if (window.currentData.stays) {
+            window.currentData.stays.forEach((s, idx) => { if (!s.id) s.id = 's-' + (idx + 1); });
+          }
+        } else {
+          window.currentData = JSON.parse(JSON.stringify(DEFAULT_DATA));
+          saveData();
+        }
+      } catch (e) {
+        window.currentData = JSON.parse(JSON.stringify(DEFAULT_DATA));
+      }
+      renderAll();
+    }
+
+    function saveData() {
+      window.lastLocalUpdate = Date.now();
+      try {
+        localStorage.setItem('vietnam_couple_trip_data_v2', JSON.stringify(window.currentData));
+      } catch(e) {
+        console.warn("Storage notice:", e);
+      }
+      // Broadcast to cloud if available
+      if (typeof window.syncToCloud === 'function') {
+        window.syncToCloud();
+      }
+      updateGlobalStats();
+    }
+
+    // Manual refresh sync button
+    function manualSync() {
+      const icon = document.getElementById('sync-spin-icon');
+      if (icon) icon.classList.add('fa-spin');
+      setTimeout(() => {
+        if (icon) icon.classList.remove('fa-spin');
+        showToast("Đã kiểm tra đồng bộ đám mây mới nhất! ☁️✨");
+      }, 700);
+    }
+
+    // Export JSON to easily paste into GitHub or keep a backup file
+    function exportDataJson() {
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(window.currentData, null, 2));
+      const downloadAnchor = document.createElement('a');
+      downloadAnchor.setAttribute("href", dataStr);
+      downloadAnchor.setAttribute("download", `itinerary_backup_${new Date().toISOString().slice(0, 10)}.json`);
+      document.body.appendChild(downloadAnchor);
+      downloadAnchor.click();
+      downloadAnchor.remove();
+      showToast("Đã tải file sao lưu JSON về máy! 💾");
+    }
+
+    function resetToDefaultData() {
+      showConfirmationModal("Bạn có muốn đặt lại toàn bộ lịch trình về bản gốc nịnh mắt từ sổ tay không?", () => {
+        window.currentData = JSON.parse(JSON.stringify(DEFAULT_DATA));
+        saveData();
+        renderAll();
+        showToast("Đã khôi phục kế hoạch chuẩn từ notebook! 🌸");
+      });
+    }
+
+    function switchTab(tabName) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+      
+      // Desktop tabs
+      document.querySelectorAll('.tab-button').forEach(btn => {
+        btn.classList.remove('bg-pink-500', 'text-white', 'shadow-sm');
+        btn.classList.add('text-gray-600');
+      });
+
+      // Mobile bottom bar buttons
+      document.querySelectorAll('.mobile-nav-btn').forEach(btn => {
+        btn.classList.remove('text-pink-600', 'font-bold');
+        btn.classList.add('text-gray-400', 'font-semibold');
+        const iconContainer = btn.querySelector('div');
+        if (iconContainer) iconContainer.classList.remove('bg-pink-100');
+      });
+
+      const targetTab = document.getElementById(`tab-${tabName}`);
+      const targetBtn = document.getElementById(`tab-btn-${tabName}`);
+      const targetMobileBtn = document.getElementById(`mobile-tab-${tabName}`);
+      
+      if (targetTab) targetTab.classList.remove('hidden');
+      if (targetBtn) {
+        targetBtn.classList.add('bg-pink-500', 'text-white', 'shadow-sm');
+        targetBtn.classList.remove('text-gray-600');
+      }
+      if (targetMobileBtn) {
+        targetMobileBtn.classList.add('text-pink-600', 'font-bold');
+        targetMobileBtn.classList.remove('text-gray-400', 'font-semibold');
+        const iconContainer = targetMobileBtn.querySelector('div');
+        if (iconContainer) iconContainer.classList.add('bg-pink-100');
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function formatMoney(amount) {
+      if (!amount && amount !== 0) return '0 đ';
+      return new Intl.NumberFormat('vi-VN').format(amount) + ' đ';
+    }
+
+    function renderDayPills() {
+      const container = document.getElementById('day-pill-container');
+      if (!container || !window.currentData || !window.currentData.days) return;
+
+      container.innerHTML = window.currentData.days.map(day => {
+        const isSelected = day.id === selectedDayId;
+        const totalItems = day.activities ? day.activities.length : 0;
+        return `
+          <button onclick="selectDay(${day.id})" class="cute-btn flex-shrink-0 px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-2xl text-left border transition-all ${
+            isSelected 
+              ? 'bg-gradient-to-tr from-pink-500 to-rose-400 text-white border-pink-500 shadow-md shadow-pink-200' 
+              : 'bg-white hover:bg-pink-50 text-gray-700 border-pink-100'
+          }">
+            <div class="text-[10px] sm:text-[11px] font-extrabold uppercase opacity-85">${day.dateLabel}</div>
+            <div class="text-xs font-bold whitespace-nowrap mt-0.5">${day.title.split('–')[0].substring(0, 16)}...</div>
+            <div class="text-[9px] sm:text-[10px] mt-0.5 opacity-80 font-semibold">✨ ${totalItems} mục</div>
+          </button>
+        `;
+      }).join('');
+    }
+
+    function selectDay(dayId) {
+      selectedDayId = dayId;
+      renderDayPills();
+      renderTimeline();
+    }
+
+    function renderTimeline() {
+      const activeDay = window.currentData.days.find(d => d.id === selectedDayId) || window.currentData.days[0];
+      if (!activeDay) return;
+
+      document.getElementById('current-day-label').textContent = `Ngày ${activeDay.id} / 8`;
+      document.getElementById('active-day-subtitle').textContent = activeDay.subtitle || `NGÀY ${activeDay.id}`;
+      document.getElementById('active-day-title').textContent = `${activeDay.title} (${activeDay.fullDate})`;
+      document.getElementById('active-day-note').textContent = activeDay.note || 'Lịch trình thảnh thơi, chụp ảnh đẹp';
+      document.getElementById('day-outfit-note').textContent = activeDay.outfit || 'Tone trắng be hoặc vintage cực kỳ tôn dáng!';
+
+      const timelineContainer = document.getElementById('timeline-container');
+      if (!activeDay.activities || activeDay.activities.length === 0) {
+        timelineContainer.innerHTML = `
+          <div class="glass-card p-8 sm:p-12 text-center rounded-3xl border border-dashed border-pink-200">
+            <div class="text-3xl sm:text-4xl mb-2 sm:mb-3">🏖️</div>
+            <h4 class="font-bold text-gray-700 text-sm sm:text-base">Ngày này chưa có hoạt động nào</h4>
+            <p class="text-xs text-gray-400 mt-1 mb-4">Hãy bấm thêm để lưu lại các quán ăn hoặc điểm check-in yêu thích!</p>
+            <button onclick="openModal('add')" class="cute-btn px-4 py-2 bg-pink-500 text-white rounded-xl text-xs font-bold">
+              Thêm hoạt động ngay
+            </button>
+          </div>
+        `;
+        updateDayStats(0, 0);
+        return;
+      }
+
+      let dayPlannedTotal = 0;
+      let dayActualTotal = 0;
+
+      timelineContainer.innerHTML = activeDay.activities.map((act) => {
+        dayPlannedTotal += Number(act.plannedCost || 0);
+        dayActualTotal += Number(act.actualCost || 0);
+
+        let statusBadge = '';
+        if (act.status === 'Đã Thanh Toán') {
+          statusBadge = '<span class="badge-paid px-2 py-0.5 rounded-full text-[10px] sm:text-[11px] font-bold">✓ Đã thanh toán</span>';
+        } else if (act.status === 'Đã Cọc') {
+          statusBadge = '<span class="badge-deposit px-2 py-0.5 rounded-full text-[10px] sm:text-[11px] font-bold">🏷️ Đã cọc</span>';
+        } else if (act.status === 'Miễn Phí') {
+          statusBadge = '<span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full text-[10px] sm:text-[11px] font-bold">🎁 Miễn phí</span>';
+        } else {
+          statusBadge = '<span class="badge-unpaid px-2 py-0.5 rounded-full text-[10px] sm:text-[11px] font-bold">⏳ Chưa thanh toán</span>';
+        }
+
+        return `
+          <div class="glass-card rounded-2xl p-3.5 sm:p-5 shadow-card hover:shadow-cute transition-all border border-pink-100 group relative overflow-hidden">
+            <div class="absolute left-0 top-0 bottom-0 w-1.5 bg-gradient-to-b from-pink-400 to-rose-300"></div>
+
+            <div class="flex flex-col sm:flex-row justify-between sm:items-start gap-2.5 ml-1.5 sm:ml-2">
+              <div class="space-y-1.5 flex-1 min-w-0">
+                <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
+                  <span class="inline-flex items-center gap-1 font-extrabold text-[11px] sm:text-xs text-pink-600 bg-pink-50 px-2.5 py-0.5 rounded-xl">
+                    <i class="fa-regular fa-clock text-[9px]"></i> ${act.time}
+                  </span>
+                  ${statusBadge}
+                  ${act.outfit ? `<span class="bg-amber-50 text-amber-800 text-[10px] sm:text-[11px] px-2 py-0.5 rounded-full font-medium truncate max-w-[200px]"><i class="fa-solid fa-shirt text-[9px]"></i> ${act.outfit}</span>` : ''}
+                </div>
+
+                <h3 class="font-black text-gray-800 text-sm sm:text-base group-hover:text-pink-600 transition-colors">
+                  ${act.activity}
+                </h3>
+
+                ${act.location ? `
+                  <p class="text-xs text-gray-500 flex items-center gap-1.5 truncate">
+                    <i class="fa-solid fa-location-dot text-rose-400 text-xs flex-shrink-0"></i>
+                    <span class="truncate">${act.location}</span>
+                  </p>
+                ` : ''}
+
+                ${act.note ? `
+                  <div class="bg-pink-50/50 rounded-xl p-2 sm:p-2.5 text-xs text-gray-600 border border-pink-100/60 mt-1.5 flex items-start gap-1.5">
+                    <span class="text-pink-400 font-bold flex-shrink-0">💬 Note:</span>
+                    <span class="italic leading-relaxed break-words">${act.note}</span>
+                  </div>
+                ` : ''}
+              </div>
+
+              <!-- Cost & Action Buttons -->
+              <div class="flex sm:flex-col items-end justify-between sm:justify-start gap-2 pt-2 sm:pt-0 border-t sm:border-t-0 border-gray-100 flex-shrink-0">
+                <div class="text-left sm:text-right">
+                  <div class="text-[10px] sm:text-[11px] text-gray-400 font-medium">Chi phí</div>
+                  <div class="text-xs sm:text-sm font-black text-pink-600 font-display">
+                    ${formatMoney(act.actualCost || act.plannedCost || 0)}
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-1">
+                  <button onclick="editActivity('${act.id}')" title="Sửa hoạt động" class="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-pink-50 hover:bg-pink-200 text-pink-600 flex items-center justify-center text-xs transition-colors">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                  </button>
+                  <button onclick="deleteActivity('${act.id}')" title="Xóa hoạt động" class="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-gray-50 hover:bg-rose-100 text-gray-400 hover:text-rose-600 flex items-center justify-center text-xs transition-colors">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      updateDayStats(dayPlannedTotal, dayActualTotal);
+    }
+
+    function updateDayStats(planned, actual) {
+      document.getElementById('day-stat-planned').textContent = formatMoney(planned);
+      document.getElementById('day-stat-actual').textContent = formatMoney(actual);
+      
+      const percent = planned > 0 ? Math.min(Math.round((actual / planned) * 100), 100) : (actual > 0 ? 100 : 0);
+      document.getElementById('day-stat-progress').style.width = `${percent}%`;
+    }
+
+    function updateGlobalStats() {
+      if (!window.currentData || !window.currentData.days) return;
+
+      let grandTotalActual = 0;
+      let totalActivities = 0;
+
+      window.currentData.days.forEach(day => {
+        if (day.activities) {
+          day.activities.forEach(act => {
+            grandTotalActual += Number(act.actualCost || 0);
+            totalActivities++;
+          });
+        }
+      });
+
+      const totalCostEl = document.getElementById('stat-total-cost');
+      const countEl = document.getElementById('stat-activity-count');
+      
+      if (totalCostEl) totalCostEl.textContent = formatMoney(grandTotalActual);
+      if (countEl) countEl.textContent = `${totalActivities} mục`;
+    }
+
+    function renderFoodList(filterCity = 'all') {
+      currentFoodFilter = filterCity;
+      const container = document.getElementById('food-grid-container');
+      if (!container || !window.currentData || !window.currentData.foodRecommendations) return;
+
+      const items = window.currentData.foodRecommendations.filter(f => filterCity === 'all' || f.city === filterCity);
+
+      if (items.length === 0) {
+        container.innerHTML = `
+          <div class="col-span-full py-10 text-center glass-card rounded-3xl border border-dashed border-pink-200">
+            <div class="text-3xl mb-2">🍜</div>
+            <p class="text-xs font-bold text-gray-500">Chưa có quán ăn nào trong danh mục này.</p>
+            <button onclick="openFoodModal('add')" class="cute-btn mt-3 px-4 py-2 bg-pink-500 text-white rounded-xl text-xs font-bold">
+              Thêm quán mới ngay
+            </button>
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = items.map(food => {
+        let cityColor = 'bg-pink-100 text-pink-700';
+        if (food.city === 'hoian') cityColor = 'bg-amber-100 text-amber-800';
+        if (food.city === 'danang') cityColor = 'bg-blue-100 text-blue-700';
+
+        return `
+          <div class="glass-card rounded-3xl p-4 sm:p-5 shadow-card hover:shadow-cute transition-all border border-pink-100 flex flex-col justify-between group relative">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="${cityColor} text-[10px] sm:text-[11px] font-bold px-2.5 py-0.5 rounded-full uppercase">
+                  ${food.cityName || (food.city === 'hue' ? 'Huế' : food.city === 'hoian' ? 'Hội An' : 'Đà Nẵng')}
+                </span>
+                
+                <div class="flex items-center gap-1.5">
+                  <span class="text-xs font-bold text-pink-500 bg-pink-50 px-2 py-0.5 rounded-full">
+                    ${food.price || 'Bình dân'}
+                  </span>
+                  <button onclick="editFood('${food.id}')" title="Sửa quán" class="w-6 h-6 sm:w-7 sm:h-7 rounded-lg bg-pink-50 hover:bg-pink-100 text-pink-600 flex items-center justify-center text-[10px] sm:text-[11px] transition-colors">
+                    <i class="fa-solid fa-pen"></i>
+                  </button>
+                  <button onclick="deleteFood('${food.id}')" title="Xóa quán" class="w-6 h-6 sm:w-7 sm:h-7 rounded-lg bg-gray-50 hover:bg-rose-100 text-gray-400 hover:text-rose-600 flex items-center justify-center text-[10px] sm:text-[11px] transition-colors">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </button>
+                </div>
+              </div>
+
+              <h3 class="font-extrabold text-sm sm:text-base text-gray-800 group-hover:text-pink-600 transition-colors">${food.name}</h3>
+              
+              ${food.address ? `
+                <p class="text-xs text-gray-500 mt-1 flex items-start gap-1">
+                  <i class="fa-solid fa-map-pin text-rose-400 mt-0.5"></i>
+                  <span class="break-words">${food.address}</span>
+                </p>
+              ` : ''}
+
+              ${food.review ? `
+                <div class="bg-gray-50/80 rounded-2xl p-2.5 sm:p-3 text-xs text-gray-600 mt-2.5 border border-gray-100 leading-relaxed">
+                  <span class="font-bold text-gray-700">Review:</span> ${food.review}
+                </div>
+              ` : ''}
+            </div>
+
+            <div class="mt-3.5 pt-2.5 border-t border-gray-100 flex items-center justify-between text-xs text-gray-400">
+              <span class="truncate"><i class="fa-regular fa-clock mr-1"></i> ${food.hours || 'Cả ngày'}</span>
+              <span class="text-pink-500 font-bold flex-shrink-0">${food.tag || 'Ăn ngon'}</span>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function filterFoodCity(city) {
+      document.querySelectorAll('.food-filter-btn').forEach(btn => {
+        if (btn.getAttribute('data-city') === city) {
+          btn.classList.add('bg-pink-500', 'text-white', 'shadow-sm');
+          btn.classList.remove('bg-white', 'text-gray-600');
+        } else {
+          btn.classList.remove('bg-pink-500', 'text-white', 'shadow-sm');
+          btn.classList.add('bg-white', 'text-gray-600');
+        }
+      });
+      renderFoodList(city);
+    }
+
+    function openFoodModal(mode, foodData = null) {
+      const modal = document.getElementById('food-modal');
+      const form = document.getElementById('food-form');
+      const title = document.getElementById('food-modal-title');
+      form.reset();
+
+      if (mode === 'edit' && foodData) {
+        title.textContent = "Chỉnh Sửa Quán Ăn";
+        document.getElementById('form-food-id').value = foodData.id;
+        document.getElementById('form-food-city').value = foodData.city;
+        document.getElementById('form-food-name').value = foodData.name || '';
+        document.getElementById('form-food-tag').value = foodData.tag || '';
+        document.getElementById('form-food-price').value = foodData.price || '';
+        document.getElementById('form-food-hours').value = foodData.hours || '';
+        document.getElementById('form-food-address').value = foodData.address || '';
+        document.getElementById('form-food-review').value = foodData.review || '';
+      } else {
+        title.textContent = "Thêm Quán Ăn Mới";
+        document.getElementById('form-food-id').value = '';
+        document.getElementById('form-food-city').value = currentFoodFilter === 'all' ? 'hue' : currentFoodFilter;
+      }
+
+      modal.classList.remove('hidden');
+    }
+
+    function closeFoodModal() {
+      document.getElementById('food-modal').classList.add('hidden');
+    }
+
+    function editFood(foodId) {
+      const item = window.currentData.foodRecommendations.find(f => f.id === foodId);
+      if (item) {
+        openFoodModal('edit', item);
+      }
+    }
+
+    function deleteFood(foodId) {
+      showConfirmationModal("Bạn có chắc muốn xóa quán ăn này khỏi bản đồ ẩm thực không?", () => {
+        window.currentData.foodRecommendations = window.currentData.foodRecommendations.filter(f => f.id !== foodId);
+        saveData();
+        renderFoodList(currentFoodFilter);
+        showToast("Đã xóa quán ăn xinh xắn!");
+      });
+    }
+
+    function handleFoodFormSubmit(e) {
+      e.preventDefault();
+      const foodId = document.getElementById('form-food-id').value;
+      const city = document.getElementById('form-food-city').value;
+      let cityName = 'Huế';
+      if (city === 'hoian') cityName = 'Hội An';
+      if (city === 'danang') cityName = 'Đà Nẵng';
+
+      const foodItem = {
+        id: foodId || ('f-' + Date.now()),
+        city: city,
+        cityName: cityName,
+        name: document.getElementById('form-food-name').value,
+        tag: document.getElementById('form-food-tag').value || 'Món ngon',
+        price: document.getElementById('form-food-price').value || 'Giá hợp lý',
+        hours: document.getElementById('form-food-hours').value || 'Cả ngày',
+        address: document.getElementById('form-food-address').value,
+        review: document.getElementById('form-food-review').value
+      };
+
+      if (foodId) {
+        window.currentData.foodRecommendations = window.currentData.foodRecommendations.map(f => f.id === foodId ? foodItem : f);
+      } else {
+        if (!window.currentData.foodRecommendations) window.currentData.foodRecommendations = [];
+        window.currentData.foodRecommendations.unshift(foodItem);
+      }
+
+      saveData();
+      closeFoodModal();
+      renderFoodList(currentFoodFilter);
+      showToast(foodId ? "Đã cập nhật quán ăn thành công! 🍜" : "Đã thêm quán ăn mới vào cẩm nang! 🥟");
+    }
+
+    function renderStays() {
+      const container = document.getElementById('stay-columns-container');
+      if (!container || !window.currentData || !window.currentData.stays) return;
+
+      if (window.currentData.stays.length === 0) {
+        container.innerHTML = `
+          <div class="col-span-full py-10 text-center glass-card rounded-3xl border border-dashed border-pink-200">
+            <div class="text-3xl mb-2">🌿</div>
+            <p class="text-xs font-bold text-gray-500">Chưa có nơi lưu trú nào.</p>
+            <button onclick="openStayModal('add')" class="cute-btn mt-3 px-4 py-2 bg-pink-500 text-white rounded-xl text-xs font-bold">
+              Thêm khách sạn ngay
+            </button>
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = window.currentData.stays.map(stay => `
+        <div class="glass-card rounded-3xl p-5 sm:p-6 shadow-card border border-pink-100 flex flex-col justify-between group relative">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-gradient-to-tr from-pink-300 to-rose-200 text-white flex items-center justify-center text-lg sm:text-xl shadow-md">
+                🏡
+              </div>
+              
+              <div class="flex items-center gap-1.5">
+                <button onclick="editStay('${stay.id}')" title="Sửa nơi ở" class="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-pink-50 hover:bg-pink-100 text-pink-600 flex items-center justify-center text-xs transition-colors">
+                  <i class="fa-solid fa-pen"></i>
+                </button>
+                <button onclick="deleteStay('${stay.id}')" title="Xóa nơi ở" class="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-gray-50 hover:bg-rose-100 text-gray-400 hover:text-rose-600 flex items-center justify-center text-xs transition-colors">
+                  <i class="fa-solid fa-trash-can"></i>
+                </button>
+              </div>
+            </div>
+
+            <span class="text-xs font-black uppercase text-pink-500 tracking-wider">${stay.city}</span>
+            <h3 class="font-black text-base sm:text-lg text-gray-800 mt-1 group-hover:text-pink-600 transition-colors">${stay.name}</h3>
+            
+            ${stay.area ? `
+              <p class="text-xs text-gray-500 mt-1 mb-2 sm:mb-3 truncate"><i class="fa-solid fa-compass text-rose-400 mr-1"></i> ${stay.area}</p>
+            ` : '<div class="mb-2 sm:mb-3"></div>'}
+
+            <div class="bg-pink-50/50 p-3 sm:p-3.5 rounded-2xl border border-pink-100 text-xs text-gray-600 space-y-1">
+              <div class="font-bold text-pink-700">Giá dự kiến: ${stay.price || 'Liên hệ'}</div>
+              <p class="text-gray-500 leading-relaxed break-words">${stay.highlights || 'Không gian ấm cúng, phù hợp cho couple.'}</p>
+            </div>
+          </div>
+
+          <div class="mt-4 sm:mt-6 pt-3 sm:pt-4 border-t border-pink-50">
+            <a href="${stay.link || 'https://www.google.com/maps/search/' + encodeURIComponent(stay.name)}" target="_blank" rel="noopener noreferrer" class="cute-btn w-full py-2 sm:py-2.5 px-3 sm:px-4 bg-white border border-pink-200 hover:bg-pink-50 text-pink-600 rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 shadow-sm">
+              Xem phòng & Đặt ngay <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function openStayModal(mode, stayData = null) {
+      const modal = document.getElementById('stay-modal');
+      const form = document.getElementById('stay-form');
+      const title = document.getElementById('stay-modal-title');
+      form.reset();
+
+      if (mode === 'edit' && stayData) {
+        title.textContent = "Chỉnh Sửa Homestay / Khách Sạn";
+        document.getElementById('form-stay-id').value = stayData.id;
+        document.getElementById('form-stay-city').value = stayData.city || '';
+        document.getElementById('form-stay-price').value = stayData.price || '';
+        document.getElementById('form-stay-name').value = stayData.name || '';
+        document.getElementById('form-stay-area').value = stayData.area || '';
+        document.getElementById('form-stay-highlights').value = stayData.highlights || '';
+        document.getElementById('form-stay-link').value = stayData.link || '';
+      } else {
+        title.textContent = "Thêm Homestay / Khách Sạn Mới";
+        document.getElementById('form-stay-id').value = '';
+        document.getElementById('form-stay-city').value = 'Huế (3 Đêm)';
+        document.getElementById('form-stay-link').value = 'https://www.booking.com';
+      }
+
+      modal.classList.remove('hidden');
+    }
+
+    function closeStayModal() {
+      document.getElementById('stay-modal').classList.add('hidden');
+    }
+
+    function editStay(stayId) {
+      const item = window.currentData.stays.find(s => s.id === stayId);
+      if (item) {
+        openStayModal('edit', item);
+      }
+    }
+
+    function deleteStay(stayId) {
+      showConfirmationModal("Bạn có muốn xóa nơi nghỉ dưỡng này không?", () => {
+        window.currentData.stays = window.currentData.stays.filter(s => s.id !== stayId);
+        saveData();
+        renderStays();
+        showToast("Đã xóa homestay khỏi danh sách!");
+      });
+    }
+
+    function handleStayFormSubmit(e) {
+      e.preventDefault();
+      const stayId = document.getElementById('form-stay-id').value;
+
+      const stayItem = {
+        id: stayId || ('s-' + Date.now()),
+        city: document.getElementById('form-stay-city').value,
+        name: document.getElementById('form-stay-name').value,
+        price: document.getElementById('form-stay-price').value || 'Đang cập nhật',
+        area: document.getElementById('form-stay-area').value,
+        highlights: document.getElementById('form-stay-highlights').value,
+        link: document.getElementById('form-stay-link').value || '#'
+      };
+
+      if (stayId) {
+        window.currentData.stays = window.currentData.stays.map(s => s.id === stayId ? stayItem : s);
+      } else {
+        if (!window.currentData.stays) window.currentData.stays = [];
+        window.currentData.stays.push(stayItem);
+      }
+
+      saveData();
+      closeStayModal();
+      renderStays();
+      showToast(stayId ? "Đã cập nhật homestay thành công! 🌿" : "Đã thêm homestay mới xinh xắn! 🏡");
+    }
+
+    function renderChecklist() {
+      const container = document.getElementById('checklist-container');
+      if (!container || !window.currentData || !window.currentData.checklist) return;
+
+      container.innerHTML = window.currentData.checklist.map(item => `
+        <div onclick="toggleChecklistItem('${item.id}')" class="glass-card p-3.5 sm:p-4 rounded-2xl shadow-card border border-pink-100 flex items-center gap-3 cursor-pointer hover:bg-pink-50/30 transition-all select-none">
+          <div class="w-5 h-5 sm:w-6 sm:h-6 rounded-lg flex items-center justify-center text-xs font-bold transition-all flex-shrink-0 ${
+            item.done 
+              ? 'bg-pink-500 text-white shadow-sm shadow-pink-200' 
+              : 'border-2 border-pink-300 bg-white'
+          }">
+            ${item.done ? '<i class="fa-solid fa-check"></i>' : ''}
+          </div>
+          <span class="text-xs sm:text-sm font-semibold flex-1 ${
+            item.done ? 'line-through text-gray-400' : 'text-gray-700'
+          }">
+            ${item.text}
+          </span>
+          <button onclick="event.stopPropagation(); deleteChecklistItem('${item.id}')" class="text-gray-300 hover:text-rose-500 text-xs p-1">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      `).join('');
+    }
+
+    function toggleChecklistItem(id) {
+      const item = window.currentData.checklist.find(c => c.id === id);
+      if (item) {
+        item.done = !item.done;
+        saveData();
+        renderChecklist();
+      }
+    }
+
+    function deleteChecklistItem(id) {
+      window.currentData.checklist = window.currentData.checklist.filter(c => c.id !== id);
+      saveData();
+      renderChecklist();
+      showToast("Đã xóa khỏi checklist!");
+    }
+
+    function addNewChecklistItemPrompt() {
+      showInputModal("Thêm việc cần chuẩn bị trước chuyến đi:", (val) => {
+        if (!val || val.trim() === '') return;
+        window.currentData.checklist.push({
+          id: 'c-' + Date.now(),
+          text: val.trim(),
+          done: false
+        });
+        saveData();
+        renderChecklist();
+        showToast("Đã thêm vào checklist! 🎀");
+      });
+    }
+
+    function openModal(mode, actData = null) {
+      const modal = document.getElementById('activity-modal');
+      const form = document.getElementById('activity-form');
+      const title = document.getElementById('modal-title');
+      const daySelect = document.getElementById('form-day-id');
+
+      daySelect.innerHTML = window.currentData.days.map(d => `
+        <option value="${d.id}" ${d.id === selectedDayId ? 'selected' : ''}>
+          Ngày ${d.id} - ${d.dateLabel}: ${d.title.substring(0, 22)}
+        </option>
+      `).join('');
+
+      form.reset();
+
+      if (mode === 'edit' && actData) {
+        title.textContent = "Chỉnh Sửa Hoạt Động";
+        document.getElementById('form-item-id').value = actData.id;
+        document.getElementById('form-day-id').value = actData.dayId;
+        document.getElementById('form-time').value = actData.time || '';
+        document.getElementById('form-activity').value = actData.activity || '';
+        document.getElementById('form-location').value = actData.location || '';
+        document.getElementById('form-planned-cost').value = actData.plannedCost || 0;
+        document.getElementById('form-actual-cost').value = actData.actualCost || 0;
+        document.getElementById('form-status').value = actData.status || 'Đã Thanh Toán';
+        document.getElementById('form-outfit').value = actData.outfit || '';
+        document.getElementById('form-note').value = actData.note || '';
+      } else {
+        title.textContent = "Thêm Hoạt Động Mới";
+        document.getElementById('form-item-id').value = '';
+        document.getElementById('form-day-id').value = selectedDayId;
+        document.getElementById('form-time').value = '14:00 - 16:30';
+      }
+
+      modal.classList.remove('hidden');
+    }
+
+    function closeModal() {
+      document.getElementById('activity-modal').classList.add('hidden');
+    }
+
+    function editActivity(actId) {
+      let foundAct = null;
+      let foundDayId = null;
+
+      for (const day of window.currentData.days) {
+        if (day.activities) {
+          const act = day.activities.find(a => a.id === actId);
+          if (act) {
+            foundAct = act;
+            foundDayId = day.id;
+            break;
+          }
+        }
+      }
+
+      if (foundAct) {
+        openModal('edit', { ...foundAct, dayId: foundDayId });
+      }
+    }
+
+    function deleteActivity(actId) {
+      showConfirmationModal("Bạn có chắc chắn muốn xóa hoạt động này khỏi lịch trình không?", () => {
+        for (const day of window.currentData.days) {
+          if (day.activities) {
+            const initialLen = day.activities.length;
+            day.activities = day.activities.filter(a => a.id !== actId);
+            if (day.activities.length !== initialLen) break;
+          }
+        }
+        saveData();
+        renderTimeline();
+        renderDayPills();
+        showToast("Đã xóa hoạt động xinh xắn!");
+      });
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+
+      const itemId = document.getElementById('form-item-id').value;
+      const targetDayId = parseInt(document.getElementById('form-day-id').value);
+      
+      const newAct = {
+        id: itemId || ('act-' + Date.now()),
+        time: document.getElementById('form-time').value,
+        activity: document.getElementById('form-activity').value,
+        location: document.getElementById('form-location').value,
+        plannedCost: parseFloat(document.getElementById('form-planned-cost').value) || 0,
+        actualCost: parseFloat(document.getElementById('form-actual-cost').value) || 0,
+        status: document.getElementById('form-status').value,
+        outfit: document.getElementById('form-outfit').value,
+        note: document.getElementById('form-note').value
+      };
+
+      if (itemId) {
+        window.currentData.days.forEach(day => {
+          if (day.activities) {
+            day.activities = day.activities.filter(a => a.id !== itemId);
+          }
+        });
+      }
+
+      const targetDay = window.currentData.days.find(d => d.id === targetDayId);
+      if (targetDay) {
+        if (!targetDay.activities) targetDay.activities = [];
+        targetDay.activities.push(newAct);
+      }
+
+      selectedDayId = targetDayId;
+      saveData();
+      closeModal();
+      renderAll();
+      showToast(itemId ? "Đã cập nhật hoạt động thành công! 💖" : "Đã thêm hoạt động mới vào lịch trình! 🌸");
+    }
+
+    function openSheetModal(type = null) {
+      if (type) currentSheetType = type;
+      selectSheetType(currentSheetType);
+      document.getElementById('sheet-paste-input').value = '';
+      document.getElementById('sheet-modal').classList.remove('hidden');
+    }
+
+    function closeSheetModal() {
+      document.getElementById('sheet-modal').classList.add('hidden');
+    }
+
+    function selectSheetType(type) {
+      currentSheetType = type;
+      document.querySelectorAll('.sheet-type-btn').forEach(btn => {
+        btn.classList.remove('bg-emerald-500', 'text-white', 'border-emerald-500', 'shadow-sm');
+        btn.classList.add('bg-white', 'text-gray-600', 'border-gray-200');
+      });
+
+      const activeBtn = document.getElementById(`sheet-tab-${type}`);
+      if (activeBtn) {
+        activeBtn.classList.add('bg-emerald-500', 'text-white', 'border-emerald-500', 'shadow-sm');
+        activeBtn.classList.remove('bg-white', 'text-gray-600', 'border-gray-200');
+      }
+
+      const conf = SHEET_TEMPLATES[type];
+      const templateBox = document.getElementById('sheet-template-info');
+      templateBox.innerHTML = `
+        <div class="text-[11px] font-bold text-emerald-800 mb-1">📋 Thứ tự cột: <span class="text-pink-600 font-extrabold">${conf.headers.join(' | ')}</span></div>
+        <div class="text-[10px] text-gray-500">👉 Chọn các ô trong Google Sheets rồi copy (Ctrl+C), sau đó dán vào khung bên dưới.</div>
+      `;
+    }
+
+    function copyTemplateHeaders() {
+      const conf = SHEET_TEMPLATES[currentSheetType];
+      const text = conf.headers.join('\t');
+      
+      const tempArea = document.createElement('textarea');
+      tempArea.value = text;
+      document.body.appendChild(tempArea);
+      tempArea.select();
+      try {
+        document.execCommand('copy');
+        showToast("Đã copy hàng cột mẫu! Dán vào Google Sheets nhé ✨");
+      } catch (err) {
+        showToast("Vui lòng thử lại!");
+      }
+      document.body.removeChild(tempArea);
+    }
+
+    function fillExampleDataToPasteArea() {
+      const conf = SHEET_TEMPLATES[currentSheetType];
+      document.getElementById('sheet-paste-input').value = conf.example;
+      showToast("Đã điền dữ liệu ví dụ! 🌿");
+    }
+
+    function processSheetImport() {
+      const rawText = document.getElementById('sheet-paste-input').value.trim();
+      if (!rawText) {
+        showToast("Vui lòng dán dữ liệu bảng từ Google Sheets!");
+        return;
+      }
+
+      const mode = document.querySelector('input[name="sheet-insert-mode"]:checked').value;
+      const lines = rawText.split('\n').map(l => l.trim()).filter(l => l.length > 0);
+
+      if (lines.length === 0) {
+        showToast("Không tìm thấy hàng dữ liệu hợp lệ!");
+        return;
+      }
+
+      let count = 0;
+      try {
+        if (currentSheetType === 'activities') {
+          count = importActivitiesFromSheet(lines, mode);
+        } else if (currentSheetType === 'food') {
+          count = importFoodFromSheet(lines, mode);
+        } else if (currentSheetType === 'stays') {
+          count = importStaysFromSheet(lines, mode);
+        } else if (currentSheetType === 'checklist') {
+          count = importChecklistFromSheet(lines, mode);
+        }
+
+        saveData();
+        renderAll();
+        closeSheetModal();
+        showToast(`Đã nạp thành công ${count} mục từ Google Sheets! 🎉`);
+      } catch (err) {
+        console.error(err);
+        showToast("Có lỗi khi đọc bảng: " + err.message);
+      }
+    }
+
+    function parseRow(line) {
+      if (line.includes('\t')) return line.split('\t').map(c => c.trim());
+      if (line.includes(';')) return line.split(';').map(c => c.trim());
+      return line.split(',').map(c => c.trim());
+    }
+
+    function cleanNumber(str) {
+      if (!str) return 0;
+      const cleaned = str.toString().replace(/[^0-9]/g, '');
+      return cleaned ? parseFloat(cleaned) : 0;
+    }
+
+    function importActivitiesFromSheet(lines, mode) {
+      if (mode === 'replace') {
+        window.currentData.days.forEach(d => { d.activities = []; });
+      }
+
+      let added = 0;
+      lines.forEach((line, idx) => {
+        const cols = parseRow(line);
+        if (cols[0] && (cols[0].toLowerCase().includes('ngày') || cols[0].toLowerCase().includes('day'))) return;
+
+        let dayNum = parseInt(cols[0]);
+        if (isNaN(dayNum) || dayNum < 1 || dayNum > 8) dayNum = selectedDayId;
+
+        const time = cols[1] || "14:00 - 16:00";
+        const activity = cols[2] || `Hoạt động mới (Dòng ${idx + 1})`;
+        const location = cols[3] || "";
+        const plannedCost = cleanNumber(cols[4]);
+        const actualCost = cleanNumber(cols[5]);
+        const status = cols[6] || "Đã Thanh Toán";
+        const outfit = cols[7] || "";
+        const note = cols[8] || "";
+
+        const targetDay = window.currentData.days.find(d => d.id === dayNum);
+        if (targetDay) {
+          if (!targetDay.activities) targetDay.activities = [];
+          targetDay.activities.push({
+            id: 'act-sheet-' + Date.now() + '-' + Math.floor(Math.random() * 1000),
+            time,
+            activity,
+            location,
+            plannedCost,
+            actualCost,
+            status,
+            outfit,
+            note
+          });
+          added++;
+        }
+      });
+      return added;
+    }
+
+    function importFoodFromSheet(lines, mode) {
+      if (mode === 'replace') {
+        window.currentData.foodRecommendations = [];
+      }
+
+      let added = 0;
+      lines.forEach((line, idx) => {
+        const cols = parseRow(line);
+        if (cols[0] && (cols[0].toLowerCase().includes('thành phố') || cols[0].toLowerCase().includes('city') || cols[1]?.toLowerCase().includes('tên quán'))) return;
+
+        let rawCity = (cols[0] || 'hue').toLowerCase();
+        let city = 'hue';
+        let cityName = 'Huế';
+
+        if (rawCity.includes('hội') || rawCity.includes('hoian') || rawCity.includes('hoi an')) {
+          city = 'hoian';
+          cityName = 'Hội An';
+        } else if (rawCity.includes('đà') || rawCity.includes('danang') || rawCity.includes('da nang')) {
+          city = 'danang';
+          cityName = 'Đà Nẵng';
+        }
+
+        const name = cols[1] || `Quán ăn mới ${idx + 1}`;
+        const address = cols[2] || "";
+        const price = cols[3] || "30k - 60k";
+        const hours = cols[4] || "07:00 - 21:00";
+        const tag = cols[5] || "Món ngon";
+        const review = cols[6] || "";
+
+        if (!window.currentData.foodRecommendations) window.currentData.foodRecommendations = [];
+        window.currentData.foodRecommendations.unshift({
+          id: 'f-sheet-' + Date.now() + '-' + Math.floor(Math.random() * 1000),
+          city,
+          cityName,
+          name,
+          address,
+          price,
+          hours,
+          tag,
+          review
+        });
+        added++;
+      });
+      return added;
+    }
+
+    function importStaysFromSheet(lines, mode) {
+      if (mode === 'replace') {
+        window.currentData.stays = [];
+      }
+
+      let added = 0;
+      lines.forEach((line, idx) => {
+        const cols = parseRow(line);
+        if (cols[0] && (cols[0].toLowerCase().includes('khu vực') || cols[0].toLowerCase().includes('thành phố') || cols[1]?.toLowerCase().includes('tên homestay'))) return;
+
+        const city = cols[0] || "Huế (3 Đêm)";
+        const name = cols[1] || `Homestay mới ${idx + 1}`;
+        const price = cols[2] || "350k - 500k / đêm";
+        const area = cols[3] || "";
+        const highlights = cols[4] || "";
+        const link = cols[5] || "https://www.booking.com";
+
+        if (!window.currentData.stays) window.currentData.stays = [];
+        window.currentData.stays.push({
+          id: 's-sheet-' + Date.now() + '-' + Math.floor(Math.random() * 1000),
+          city,
+          name,
+          price,
+          area,
+          highlights,
+          link
+        });
+        added++;
+      });
+      return added;
+    }
+
+    function importChecklistFromSheet(lines, mode) {
+      if (mode === 'replace') {
+        window.currentData.checklist = [];
+      }
+
+      let added = 0;
+      lines.forEach((line, idx) => {
+        const cols = parseRow(line);
+        if (cols[0] && (cols[0].toLowerCase().includes('nội dung') || cols[0].toLowerCase().includes('checklist') || cols[0].toLowerCase().includes('việc'))) return;
+
+        const text = cols[0] || `Chuẩn bị đồ đạc ${idx + 1}`;
+        const rawStatus = (cols[1] || '').toLowerCase();
+        const done = rawStatus.includes('xong') || rawStatus.includes('đã') || rawStatus.includes('true') || rawStatus.includes('v') || rawStatus.includes('1');
+
+        if (!window.currentData.checklist) window.currentData.checklist = [];
+        window.currentData.checklist.push({
+          id: 'c-sheet-' + Date.now() + '-' + Math.floor(Math.random() * 1000),
+          text,
+          done
+        });
+        added++;
+      });
+      return added;
+    }
+
+    window.showToast = function(message, icon = "✨") {
+      const toast = document.getElementById('toast');
+      document.getElementById('toast-msg').textContent = message;
+      document.getElementById('toast-icon').textContent = icon;
+
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.add('translate-y-24', 'opacity-0');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 2600);
+    };
+
+    function showConfirmationModal(message, onConfirm) {
+      const existing = document.getElementById('cute-confirm-dialog');
+      if (existing) existing.remove();
+
+      const dialog = document.createElement('div');
+      dialog.id = 'cute-confirm-dialog';
+      dialog.className = "fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/30 backdrop-blur-sm";
+      dialog.innerHTML = `
+        <div class="glass-card bg-white max-w-sm w-full p-6 rounded-3xl shadow-float border border-pink-200 text-center animate-scale-up">
+          <div class="w-12 h-12 mx-auto rounded-2xl bg-pink-100 text-pink-600 flex items-center justify-center text-xl mb-3">
+            💌
+          </div>
+          <h4 class="font-black text-gray-800 text-base mb-2">Xác Nhận Thao Tác</h4>
+          <p class="text-xs text-gray-500 leading-relaxed mb-5">${message}</p>
+          <div class="flex items-center justify-center gap-3">
+            <button id="cancel-confirm-btn" class="px-4 py-2 rounded-xl border border-gray-200 text-xs font-bold text-gray-500 hover:bg-gray-50">
+              Đóng
+            </button>
+            <button id="ok-confirm-btn" class="cute-btn px-5 py-2 rounded-xl bg-pink-500 text-white text-xs font-bold shadow-md shadow-pink-200">
+              Đồng Ý
+            </button>
+          </div>
+        </div>
+      `;
+      document.body.appendChild(dialog);
+
+      document.getElementById('cancel-confirm-btn').onclick = () => dialog.remove();
+      document.getElementById('ok-confirm-btn').onclick = () => {
+        dialog.remove();
+        if (onConfirm) onConfirm();
+      };
+    }
+
+    function showInputModal(titleText, onSubmit) {
+      const existing = document.getElementById('cute-input-dialog');
+      if (existing) existing.remove();
+
+      const dialog = document.createElement('div');
+      dialog.id = 'cute-input-dialog';
+      dialog.className = "fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/30 backdrop-blur-sm";
+      dialog.innerHTML = `
+        <div class="glass-card bg-white max-w-sm w-full p-6 rounded-3xl shadow-float border border-pink-200 text-center animate-scale-up">
+          <div class="w-12 h-12 mx-auto rounded-2xl bg-pink-100 text-pink-600 flex items-center justify-center text-xl mb-3">
+            📝
+          </div>
+          <h4 class="font-black text-gray-800 text-base mb-2">${titleText}</h4>
+          <input type="text" id="custom-prompt-input" placeholder="Nhập nội dung cần lưu..." class="w-full text-xs font-medium px-3.5 py-2.5 rounded-xl border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-300 mb-4">
+          <div class="flex items-center justify-center gap-3">
+            <button id="cancel-prompt-btn" class="px-4 py-2 rounded-xl border border-gray-200 text-xs font-bold text-gray-500 hover:bg-gray-50">
+              Hủy
+            </button>
+            <button id="ok-prompt-btn" class="cute-btn px-5 py-2 rounded-xl bg-pink-500 text-white text-xs font-bold shadow-md shadow-pink-200">
+              Thêm Ngay
+            </button>
+          </div>
+        </div>
+      `;
+      document.body.appendChild(dialog);
+
+      const input = document.getElementById('custom-prompt-input');
+      input.focus();
+
+      document.getElementById('cancel-prompt-btn').onclick = () => dialog.remove();
+      document.getElementById('ok-prompt-btn').onclick = () => {
+        const val = input.value;
+        dialog.remove();
+        if (onSubmit) onSubmit(val);
+      };
+    }
+
+    window.renderAll = function() {
+      renderDayPills();
+      renderTimeline();
+      renderFoodList('all');
+      renderStays();
+      renderChecklist();
+      updateGlobalStats();
+    };
+
+    window.onload = function () {
+      initData();
+    };
+  </script>
+</body>
+</html>
