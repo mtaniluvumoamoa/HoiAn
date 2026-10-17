@@ -830,27 +830,34 @@
     }
 
     // Lắng nghe thay đổi theo thời gian thực (Realtime Sync)
-    function setupCloudListener() {
+   function setupCloudListener() {
       if (!db || !currentUser) return;
       try {
         const sharedTripDoc = doc(db, 'plans', 'hue_danang_trip_2026');
-        onSnapshot(sharedTripDoc, (docSnap) => {
+        cloudUnsubscribe = onSnapshot(sharedTripDoc, (docSnap) => {
           if (docSnap.exists()) {
             const remoteData = docSnap.data();
             if (remoteData && remoteData.payload) {
+              // Bỏ qua nếu chính thiết bị này vừa đẩy lên (tránh giật lag giao diện)
+              if (remoteData.updatedBy === currentUser.uid && window.lastLocalUpdate === remoteData.updatedAt) {
+                return;
+              }
+
               const parsed = JSON.parse(remoteData.payload);
-              if (!window.currentData || (remoteData.updatedAt && remoteData.updatedAt > (window.lastLocalUpdate || 0))) {
-                window.currentData = parsed;
-                window.lastLocalUpdate = remoteData.updatedAt;
-                localStorage.setItem('vietnam_couple_trip_data_v2', remoteData.payload);
-                if (typeof window.renderAll === 'function') {
-                  window.renderAll();
-                }
-                if (typeof window.showToast === 'function') {
-                  window.showToast("Dữ liệu vừa được cập nhật từ thiết bị khác! ☁️", "📱");
-                }
+              window.currentData = parsed;
+              window.lastLocalUpdate = remoteData.updatedAt || Date.now();
+              localStorage.setItem('vietnam_couple_trip_data_v2', remoteData.payload);
+
+              if (typeof window.renderAll === 'function') {
+                window.renderAll();
+              }
+              if (typeof window.showToast === 'function') {
+                window.showToast("Dữ liệu vừa được cập nhật từ thiết bị khác! ☁️", "📱");
               }
             }
+          } else {
+            // Lần đầu tiên chạy: tự đẩy dữ liệu ban đầu lên đám mây
+            window.syncToCloud();
           }
         }, (error) => {
           console.warn("Cloud sync listener error:", error);
