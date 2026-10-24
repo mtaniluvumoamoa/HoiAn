@@ -291,23 +291,28 @@
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6">
         
         <!-- Left Column: Day Details & Activities List (8 cols) -->
-        <div class="lg:col-span-8 space-y-3 sm:space-y-4">
-          <div class="glass-card p-4 sm:p-6 rounded-3xl shadow-card border border-pink-100 flex flex-col sm:flex-row justify-between sm:items-center gap-3 bg-gradient-to-r from-white via-pink-50/25 to-white">
-            <div>
-              <span class="text-[11px] sm:text-xs uppercase font-extrabold text-pink-500 tracking-wider" id="active-day-subtitle">NGÀY 1</span>
-              <h2 class="text-lg sm:text-2xl font-black text-gray-800" id="active-day-title">Khởi hành Hà Nội → Huế</h2>
-              <p class="text-xs text-gray-500 mt-0.5" id="active-day-note">Thời tiết mát mẻ, chuẩn bị hành lý nhẹ nhàng</p>
-            </div>
-            
-            <div class="flex items-center gap-2 self-start sm:self-center">
-              <button onclick="openSheetModal('activities')" class="cute-btn inline-flex items-center justify-center gap-1.5 px-3 py-1.5 sm:px-3.5 sm:py-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 text-xs font-bold rounded-xl border border-emerald-200">
-                <i class="fa-solid fa-table"></i> <span class="hidden xs:inline">Dán từ Sheet</span>
-              </button>
-              <button onclick="openModal('add')" class="cute-btn inline-flex items-center justify-center gap-1.5 px-3.5 py-1.5 sm:px-4 sm:py-2 bg-pink-100 hover:bg-pink-200 text-pink-700 text-xs font-bold rounded-xl">
-                <i class="fa-solid fa-plus"></i> Thêm mục
-              </button>
-            </div>
+        <!-- Left Column: Day Details & Activities List (8 cols) -->
+      <div class="lg:col-span-8 space-y-3 sm:space-y-4">
+        <div class="glass-card p-4 sm:p-6 rounded-3xl shadow-card border border-pink-100 flex flex-col sm:flex-row justify-between sm:items-center gap-3 bg-gradient-to-r from-white via-pink-50/25 to-white">
+          <div>
+            <span class="text-[11px] sm:text-xs uppercase font-extrabold text-pink-500 tracking-wider" id="active-day-subtitle">NGÀY 1</span>
+            <h2 class="text-lg sm:text-2xl font-black text-gray-800" id="active-day-title">Khởi hành Hà Nội → Huế</h2>
+            <p class="text-xs text-gray-500 mt-0.5" id="active-day-note">Thời tiết mát mẻ, chuẩn bị hành lý nhẹ nhàng</p>
           </div>
+          
+          <div class="flex flex-wrap items-center gap-2 self-start sm:self-center">
+            <!-- Nút chỉnh sửa thông tin ngày hiện tại -->
+            <button onclick="openEditDayModal()" class="cute-btn inline-flex items-center justify-center gap-1.5 px-3.5 py-1.5 sm:px-4 sm:py-2 bg-pink-50 hover:bg-pink-100 text-pink-600 text-xs font-bold rounded-xl border border-pink-200">
+              <i class="fa-solid fa-calendar-pen"></i> Sửa Ngày Này
+            </button>
+            <button onclick="openSheetModal('activities')" class="cute-btn inline-flex items-center justify-center gap-1.5 px-3 py-1.5 sm:px-3.5 sm:py-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 text-xs font-bold rounded-xl border border-emerald-200">
+              <i class="fa-solid fa-table"></i> <span class="hidden xs:inline">Dán từ Sheet</span>
+            </button>
+            <button onclick="openModal('add')" class="cute-btn inline-flex items-center justify-center gap-1.5 px-3.5 py-1.5 sm:px-4 sm:py-2 bg-pink-100 hover:bg-pink-200 text-pink-700 text-xs font-bold rounded-xl">
+              <i class="fa-solid fa-plus"></i> Thêm mục
+            </button>
+          </div>
+        </div>
 
           <!-- Activities Stream -->
           <div id="timeline-container" class="space-y-3 relative">
@@ -898,7 +903,41 @@
       }
     }
   </script>
+  function openEditDayModal() {
+      const activeDay = window.currentData.days.find(d => d.id === selectedDayId);
+      if (!activeDay) return;
 
+      document.getElementById('form-day-label').value = activeDay.dateLabel || '';
+      document.getElementById('form-day-fulldate').value = activeDay.fullDate || '';
+      document.getElementById('form-day-title').value = activeDay.title || '';
+      document.getElementById('form-day-subtitle').value = activeDay.subtitle || '';
+      document.getElementById('form-day-note').value = activeDay.note || '';
+      document.getElementById('form-day-outfit').value = activeDay.outfit || '';
+
+      document.getElementById('edit-day-modal').classList.remove('hidden');
+    }
+
+    function closeEditDayModal() {
+      document.getElementById('edit-day-modal').classList.add('hidden');
+    }
+
+    function handleEditDaySubmit(e) {
+      e.preventDefault();
+      const activeDay = window.currentData.days.find(d => d.id === selectedDayId);
+      if (!activeDay) return;
+
+      activeDay.dateLabel = document.getElementById('form-day-label').value;
+      activeDay.fullDate = document.getElementById('form-day-fulldate').value;
+      activeDay.title = document.getElementById('form-day-title').value;
+      activeDay.subtitle = document.getElementById('form-day-subtitle').value;
+      activeDay.note = document.getElementById('form-day-note').value;
+      activeDay.outfit = document.getElementById('form-day-outfit').value;
+
+      saveData();
+      renderAll();
+      closeEditDayModal();
+      showToast("Đã cập nhật thông tin ngày khám phá! ✨");
+    }
   <script>
     /* Default initial dataset directly organized from the user's travel notebooks */
     const DEFAULT_DATA = {
@@ -2701,5 +2740,64 @@ Chuẩn bị áo mưa mỏng nhẹ và ô gấp nhỏ gọn\tchưa`
       initData();
     };
   </script>
+  <!-- MODAL: EDIT DAY INFO -->
+<div id="edit-day-modal" class="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/40 backdrop-blur-sm hidden transition-opacity">
+  <div class="glass-card bg-white w-full max-w-md rounded-3xl shadow-float p-5 sm:p-6 relative border border-pink-100 animate-scale-up">
+    <button onclick="closeEditDayModal()" class="absolute top-4 right-4 sm:top-5 sm:right-5 w-8 h-8 rounded-full bg-gray-100 hover:bg-pink-100 text-gray-400 hover:text-pink-600 flex items-center justify-center transition-colors">
+      <i class="fa-solid fa-xmark text-sm"></i>
+    </button>
+
+    <div class="flex items-center gap-3 mb-4">
+      <div class="w-10 h-10 rounded-2xl bg-pink-100 text-pink-600 flex items-center justify-center text-lg">
+        🗓️
+      </div>
+      <div>
+        <h3 class="text-base font-black text-gray-800">Chỉnh Sửa Thông Tin Ngày Khám Phá</h3>
+        <p class="text-[11px] text-gray-400">Thay đổi ngày tháng, tiêu đề và gợi ý cho ngày này</p>
+      </div>
+    </div>
+
+    <form id="edit-day-form" onsubmit="handleEditDaySubmit(event)" class="space-y-3">
+      <div>
+        <label class="block text-xs font-bold text-gray-600 mb-1">Nhãn Ngày (Ví dụ: 28/11 (T7))</label>
+        <input type="text" id="form-day-label" required class="w-full text-xs font-medium px-3.5 py-2.5 rounded-xl border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-300">
+      </div>
+
+      <div>
+        <label class="block text-xs font-bold text-gray-600 mb-1">Ngày Đầy Đủ (Ví dụ: Thứ Bảy, 28/11/2026)</label>
+        <input type="text" id="form-day-fulldate" required class="w-full text-xs font-medium px-3.5 py-2.5 rounded-xl border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-300">
+      </div>
+
+      <div>
+        <label class="block text-xs font-bold text-gray-600 mb-1">Tiêu Đề Ngày (Ví dụ: Hà Nội → Huế Cố Đô)</label>
+        <input type="text" id="form-day-title" required class="w-full text-xs font-medium px-3.5 py-2.5 rounded-xl border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-300">
+      </div>
+
+      <div>
+        <label class="block text-xs font-bold text-gray-600 mb-1">Tiêu Đề Phụ (Ví dụ: NGÀY 1: CHECK-IN HUẾ)</label>
+        <input type="text" id="form-day-subtitle" class="w-full text-xs font-medium px-3.5 py-2.5 rounded-xl border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-300">
+      </div>
+
+      <div>
+        <label class="block text-xs font-bold text-gray-600 mb-1">Ghi Chú Nhanh</label>
+        <input type="text" id="form-day-note" class="w-full text-xs font-medium px-3.5 py-2.5 rounded-xl border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-300">
+      </div>
+
+      <div>
+        <label class="block text-xs font-bold text-gray-600 mb-1">Gợi Ý Outfit / Trang Phục</label>
+        <input type="text" id="form-day-outfit" class="w-full text-xs font-medium px-3.5 py-2.5 rounded-xl border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-300">
+      </div>
+
+      <div class="flex items-center justify-end gap-2.5 pt-3 border-t border-pink-100">
+        <button type="button" onclick="closeEditDayModal()" class="px-4 py-2 rounded-xl border border-gray-200 text-xs font-bold text-gray-500 hover:bg-gray-50">
+          Hủy
+        </button>
+        <button type="submit" class="cute-btn px-5 py-2 rounded-xl bg-gradient-to-r from-pink-500 to-rose-400 text-white font-bold text-xs shadow-md shadow-pink-200">
+          Lưu Thay Đổi
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
 </body>
 </html>
