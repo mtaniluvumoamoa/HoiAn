@@ -271,21 +271,27 @@
     <!-- MAIN TAB 1: ITINERARY -->
     <main id="tab-itinerary" class="tab-content block space-y-4 sm:space-y-6">
       
-      <!-- Day Selector Carousel / Pills -->
-      <div class="glass-card p-3 sm:p-4 rounded-3xl shadow-card border border-pink-100">
-        <div class="flex items-center justify-between mb-2.5 px-2">
-          <h2 class="text-xs sm:text-sm font-extrabold text-gray-800 flex items-center gap-2">
-            <span>🗓️</span> Chọn Ngày Khám Phá:
-          </h2>
+        <!-- Day Selector Carousel / Pills -->
+    <div class="glass-card p-3 sm:p-4 rounded-3xl shadow-card border border-pink-100">
+      <div class="flex items-center justify-between mb-2.5 px-2">
+        <h2 class="text-xs sm:text-sm font-extrabold text-gray-800 flex items-center gap-2">
+          <span>🗓️</span> Chọn Ngày Khám Phá:
+        </h2>
+        <div class="flex items-center gap-2">
+          <!-- Nút thêm ngày mới -->
+          <button onclick="openAddDayModal()" class="cute-btn text-[11px] sm:text-xs text-pink-600 font-bold bg-pink-100 hover:bg-pink-200 px-2.5 py-1 rounded-xl flex items-center gap-1 transition-colors">
+            <i class="fa-solid fa-plus"></i> Thêm Ngày
+          </button>
           <span class="text-[11px] sm:text-xs text-pink-600 font-bold bg-pink-100/70 px-2.5 py-0.5 rounded-full" id="current-day-label">
             Ngày 1
           </span>
         </div>
-        
-        <div class="flex gap-2 sm:gap-2.5 overflow-x-auto pb-2 scrollbar-none" id="day-pill-container">
-          <!-- Rendered dynamically -->
-        </div>
       </div>
+      
+      <div class="flex gap-2 sm:gap-2.5 overflow-x-auto pb-2 scrollbar-none" id="day-pill-container">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
 
       <!-- Schedule Timeline Container -->
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6">
@@ -1773,23 +1779,32 @@ Chuẩn bị áo mưa mỏng nhẹ và ô gấp nhỏ gọn\tchưa`
       return new Intl.NumberFormat('vi-VN').format(amount) + ' đ';
     }
 
-    function renderDayPills() {
+   function renderDayPills() {
       const container = document.getElementById('day-pill-container');
       if (!container || !window.currentData || !window.currentData.days) return;
 
-      container.innerHTML = window.currentData.days.map(day => {
+      container.innerHTML = window.currentData.days.map((day) => {
         const isSelected = day.id === selectedDayId;
         const totalItems = day.activities ? day.activities.length : 0;
         return `
-          <button onclick="selectDay(${day.id})" class="cute-btn flex-shrink-0 px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-2xl text-left border transition-all ${
-            isSelected 
-              ? 'bg-gradient-to-tr from-pink-500 to-rose-400 text-white border-pink-500 shadow-md shadow-pink-200' 
-              : 'bg-white hover:bg-pink-50 text-gray-700 border-pink-100'
-          }">
-            <div class="text-[10px] sm:text-[11px] font-extrabold uppercase opacity-85">${day.dateLabel}</div>
-            <div class="text-xs font-bold whitespace-nowrap mt-0.5">${day.title.split('–')[0].substring(0, 16)}...</div>
-            <div class="text-[9px] sm:text-[10px] mt-0.5 opacity-80 font-semibold">✨ ${totalItems} mục</div>
-          </button>
+          <div class="relative group flex-shrink-0">
+            <button onclick="selectDay(${day.id})" class="cute-btn px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-2xl text-left border transition-all w-44 ${
+              isSelected 
+                ? 'bg-gradient-to-tr from-pink-500 to-rose-400 text-white border-pink-500 shadow-md shadow-pink-200' 
+                : 'bg-white hover:bg-pink-50 text-gray-700 border-pink-100'
+            }">
+              <div class="text-[10px] sm:text-[11px] font-extrabold uppercase opacity-85">${day.dateLabel}</div>
+              <div class="text-xs font-bold truncate mt-0.5">${day.title}</div>
+              <div class="text-[9px] sm:text-[10px] mt-0.5 opacity-80 font-semibold">✨ ${totalItems} mục</div>
+            </button>
+            
+            <!-- Nút xóa ngày -->
+            ${window.currentData.days.length > 1 ? `
+              <button onclick="event.stopPropagation(); deleteDay(${day.id})" title="Xóa ngày này" class="absolute top-1.5 right-1.5 w-6 h-6 rounded-lg bg-white/90 hover:bg-rose-500 text-gray-400 hover:text-white flex items-center justify-center text-[10px] transition-colors shadow-sm">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+            ` : ''}
+          </div>
         `;
       }).join('');
     }
@@ -2795,6 +2810,55 @@ Chuẩn bị áo mưa mỏng nhẹ và ô gấp nhỏ gọn\tchưa`
         <button type="submit" class="cute-btn px-5 py-2 rounded-xl bg-gradient-to-r from-pink-500 to-rose-400 text-white font-bold text-xs shadow-md shadow-pink-200">
           Lưu Thay Đổi
         </button>
+      </div>
+    </form>
+  </div>
+</div>
+  <!-- MODAL: EDIT DAY INFO -->
+<div id="edit-day-modal" class="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/40 backdrop-blur-sm hidden transition-opacity">
+  <div class="glass-card bg-white w-full max-w-md rounded-3xl shadow-float p-5 sm:p-6 relative border border-pink-100 animate-scale-up">
+    <button onclick="closeEditDayModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-gray-100 hover:bg-pink-100 text-gray-400 hover:text-pink-600 flex items-center justify-center transition-colors">
+      <i class="fa-solid fa-xmark text-sm"></i>
+    </button>
+
+    <div class="flex items-center gap-3 mb-4">
+      <div class="w-10 h-10 rounded-2xl bg-pink-100 text-pink-600 flex items-center justify-center text-lg">
+        🗓️
+      </div>
+      <div>
+        <h3 class="text-base font-black text-gray-800">Chỉnh Sửa Thông Tin Ngày</h3>
+        <p class="text-[11px] text-gray-400">Thay đổi ngày tháng, tiêu đề và gợi ý cho ngày này</p>
+      </div>
+    </div>
+
+    <form id="edit-day-form" onsubmit="handleEditDaySubmit(event)" class="space-y-3">
+      <div>
+        <label class="block text-xs font-bold text-gray-600 mb-1">Nhãn Ngày (VD: 28/11 (T7))</label>
+        <input type="text" id="form-day-label" required class="w-full text-xs font-medium px-3.5 py-2.5 rounded-xl border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-300">
+      </div>
+      <div>
+        <label class="block text-xs font-bold text-gray-600 mb-1">Ngày Đầy Đủ (VD: Thứ Bảy, 28/11/2026)</label>
+        <input type="text" id="form-day-fulldate" required class="w-full text-xs font-medium px-3.5 py-2.5 rounded-xl border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-300">
+      </div>
+      <div>
+        <label class="block text-xs font-bold text-gray-600 mb-1">Tiêu Đề Ngày (VD: Hà Nội → Huế)</label>
+        <input type="text" id="form-day-title" required class="w-full text-xs font-medium px-3.5 py-2.5 rounded-xl border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-300">
+      </div>
+      <div>
+        <label class="block text-xs font-bold text-gray-600 mb-1">Tiêu Đề Phụ (VD: NGÀY 1: CHECK-IN)</label>
+        <input type="text" id="form-day-subtitle" class="w-full text-xs font-medium px-3.5 py-2.5 rounded-xl border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-300">
+      </div>
+      <div>
+        <label class="block text-xs font-bold text-gray-600 mb-1">Ghi Chú Nhanh</label>
+        <input type="text" id="form-day-note" class="w-full text-xs font-medium px-3.5 py-2.5 rounded-xl border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-300">
+      </div>
+      <div>
+        <label class="block text-xs font-bold text-gray-600 mb-1">Gợi Ý Outfit</label>
+        <input type="text" id="form-day-outfit" class="w-full text-xs font-medium px-3.5 py-2.5 rounded-xl border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-300">
+      </div>
+      <div class="flex items-center justify-end gap-2.5 pt-3 border-t border-pink-100">
+        <button type="button" onclick="closeEditDayModal()" class="px-4 py-2 rounded-xl border border-gray-200 text-xs font-bold text-gray-500 hover:bg-gray-50">Hủy</button>
+        <button type="submit" class="cute-btn px-5 py-2 rounded-xl bg-gradient-to-r from-pink-500 to-rose-400 text-white font-bold text-xs shadow-md shadow-pink-200">Lưu</button>
       </div>
     </form>
   </div>
